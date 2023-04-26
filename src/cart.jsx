@@ -1,5 +1,5 @@
 import React from 'react';
-import dustbin from "../images/dustbin.png"
+import dustbin from "../images/trash-bin-svgrepo-com.svg"
 const Cart = ({ cartItems}) => {
   const total = cartItems.reduce((accumulator, current) => (accumulator + current.product.price)* current.quantity, 0);
   return (
