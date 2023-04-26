@@ -16,7 +16,7 @@ body{
 }
 /* header */
 .header--text{
-  background-image:  url(./images/fruits.jpg);
+  background-image:  url(/images/fruits.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
