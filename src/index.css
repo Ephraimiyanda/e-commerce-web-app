@@ -21,6 +21,10 @@ body{
   background-repeat: no-repeat;
   height: 500px;
   padding: 50px;
+
+}
+.main-content{
+  margin-top: -90px;
 }
 .header--text h1{
  margin-top: 120px;
@@ -30,10 +34,27 @@ h1{
   margin-top: 37px;
   margin-right: 10px;
 }
+.cart{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  margin-top: 20px;
+  background: white;
+  padding-bottom: 20px;
+  width: 95%;
+}
+
 .cart-item{
+  padding-top:15px ;
+  padding-bottom: 15px;
+  margin-top: 10px;
 display: flex;
 align-items: center;
 justify-content: space-around;
+background-color: #fff;
 }
 .cart-btns{
   display: flex;
@@ -64,11 +85,9 @@ li{
   padding-bottom: 15px;
   transition: all 0.5s;
   padding-top: 15px;
-  position: relative;
   margin: 0px;
   padding-right: 20px;
-
-  margin-top: 0px;
+width: 100%;
 }
 .nav ul{
   display: flex;
@@ -107,7 +126,10 @@ nav a:hover{
 .quick-links{
   display: inline-flex;
   margin-top: 10px;
-  width: 14%;
+  width: 24%;
+}
+.links{
+  cursor: pointer;
 }
 .logo{
   display:inline-flex;
@@ -190,7 +212,15 @@ a{
   width: max-content;
  
 }
-
+.blur{
+  filter: contrast(0.7) blur(1px);
+  
+}
+#firstrow{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 #firstrow section div {
   display: flex;
   flex-direction: column;

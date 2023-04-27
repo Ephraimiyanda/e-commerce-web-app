@@ -1,12 +1,13 @@
 import { useState } from "react"
 import { Outlet, Link ,useLoaderData} from "react-router-dom"
-import Cart from "./cart"
 import rectangle from "../images/Rectangle 6 (1).png"
 import option from "../images/option.svg"
 
 
 
-function Nav(){
+function Nav({showCart}){
+
+   
     const [toggle, setToggle] = useState(false)
     return(
        
@@ -20,16 +21,15 @@ function Nav(){
             <img className={toggle ?"options hide":"options"} onClick={()=>{
                 setToggle(!toggle)
             }} src={option} alt="" width="35px"></img>
-           
-          
-        </div>
-  <div className={toggle ? "quick-links show": "quick-links"}>
-                <Link to={'./main-content'} className={toggle ? "links appear": "links"} href="#products">Shop</Link>
+             <div className={toggle ? "quick-links show": "quick-links"}>
+                <a className={toggle ? "links appear": "links"} href="#products">Shop</a>
                 <a className={toggle ? "links appear": "links"} href="./Aboutus.html">About us</a>
-               <li><Link to={'./cart'} className={toggle ? "links appear": "links"} >Cart</Link></li>
+                <a  onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</a>
                 <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
             </div>
-            <Outlet />
+          
+        </div>
+
         </div>
        
     )

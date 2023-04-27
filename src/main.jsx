@@ -9,18 +9,8 @@ import Cart from './cart'
 
 const router = createBrowserRouter(
 [{
-  path:"/",
-  element:<Nav/>,
-children:[
-  {
-    path:"/cart",
-    element :<Cart />
-  },
-  {
-    path:"/main-content",
-    element :<MainContent/>
-  }
-]
+  path:"/main-content",
+  element:<MainContent/>,
 },
 
 

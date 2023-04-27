@@ -8,7 +8,7 @@ const Item=({product,addToCart, productType})=>{
 
     return( 
 
-            <div className="product-container">
+            
              <section key={product.name} className={product.type === productType ? ("white-background"):("no-display")}>
                  <img src={product.photo} alt="" />
 
@@ -20,7 +20,7 @@ const Item=({product,addToCart, productType})=>{
              </div>                
          </section>
             
-        </div>
+       
     )
     
 

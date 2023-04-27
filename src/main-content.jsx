@@ -8,6 +8,11 @@ import Nav from "./nav";
 function MainContent(){
 const [products,setProduct]=useState([])
 const [cartItems, setCart] = useState([]);
+const [showcart,handleshowCart]=useState(false)
+
+function showCart(){
+handleshowCart(!showcart)
+}
 
 
 useEffect(()=>{
@@ -24,18 +29,17 @@ useEffect(()=>{
 
 const addToCart = (product)=>{
     setCart([...cartItems, {product, quantity : 1 }]);
-  setTimeout(function(){alert("product added to cart")},1000)
+ // setTimeout(function(){alert("product added to cart")},1)
   
 }
 
     return(
         
-<div>
-<div>
-      
-    </div>
+<div >
+    <Nav showCart={showCart}/>
 
-<div className="content-container">
+
+<div className={showcart ? "blur":"content-container"}>
    
 <div className="main-content">
             <div className="header--text">
@@ -137,7 +141,7 @@ const addToCart = (product)=>{
                     
                 </div>
 </div>
-<Cart cartItems={cartItems}/>
+<Cart cartItems={cartItems} cartClass={showcart ? "cart" :"no-display"}/>
 </div>
                 
                 )
