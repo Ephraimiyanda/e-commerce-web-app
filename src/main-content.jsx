@@ -24,7 +24,7 @@ useEffect(()=>{
 
 const addToCart = (product)=>{
     setCart([...cartItems, {product, quantity : 1 }]);
-  
+  setTimeout(function(){alert("product added to cart")},1000)
   
 }
 
