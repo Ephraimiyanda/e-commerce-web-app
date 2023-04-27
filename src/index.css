@@ -39,16 +39,29 @@ h1{
   flex-direction: column;
   align-content: center;
   margin-left:2.5%;
-  padding-top: 40px;
   background: white;
   padding-bottom: 20px;
   width: 95%;
   height: 80%;
   margin-top: 20px;
   position: absolute;
-  border-radius: 20px;
+  border-radius: 15px;
+  overflow-y:auto;
 }
-
+.cart::-webkit-scrollbar{
+  width: 0px;
+  border: 0px;
+}
+.cart h2{
+  
+  padding-top: 40px;
+}
+.cart p{
+  display: flex;
+  margin-top: 15%;
+  justify-content: center;
+  
+}
 .cart-item{
   padding-top:15px ;
   padding-bottom: 15px;
@@ -215,8 +228,20 @@ a{
   margin-bottom: 20px;
 }
 .blur{
-  filter: contrast(1) blur(1.5px);
+  filter: contrast(0.9) blur(1.7px);
   position: fixed;
+}
+.close{
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: #f50909;
+  width: 30px;
+  height: 35px;
+  border-top-right-radius: 12px;
 }
 #firstrow{
 display: flex;

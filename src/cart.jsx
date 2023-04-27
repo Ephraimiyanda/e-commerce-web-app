@@ -1,12 +1,12 @@
 import React from 'react';
 import dustbin from "../images/trash-bin-svgrepo-com.svg"
-
-const Cart = ({ cartItems,cartClass,deleteItem}) => {
+import close from "../images/icon-close.svg"
+const Cart = ({ cartItems,cartClass,deleteItem,closeCart}) => {
   const total = cartItems.reduce((accumulator, current) => (accumulator + current.product.price)* current.quantity, 0);
 
   return (
     <div className={cartClass}>
-      <img src="" alt="" />
+      <div className='close' onClick={()=>{closeCart()}}><img  src={close} alt="" width={"20px"}  height={"20px"}/></div>
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>

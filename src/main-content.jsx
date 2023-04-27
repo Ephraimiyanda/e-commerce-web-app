@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Cart from "./cart";
 import Item from "./product";
 import Nav from "./nav";
-
+import {BrowserRouter,RouterProvider, createBrowserRouter} from "react-router-dom"
 
 function MainContent(){
 const [products,setProduct]=useState([])
@@ -14,6 +14,9 @@ function showCart(){
 handleshowCart(!showcart)
 }
 
+function deleteItem(toBeDeleted){
+    toBeDeleted.slice()
+}
 
 useEffect(()=>{
     fetch(`http://localhost:8000/product`)
@@ -141,7 +144,7 @@ const addToCart = (product)=>{
                     
                 </div>
 </div>
-<Cart cartItems={cartItems} cartClass={showcart ? "cart" :"no-display"}/>
+<Cart cartItems={cartItems} cartClass={showcart ? "cart" :"no-display"} closeCart={showCart}/>
 </div>
                 
                 )
