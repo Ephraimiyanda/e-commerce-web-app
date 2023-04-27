@@ -6,6 +6,7 @@ const Cart = ({ cartItems,cartClass,deleteItem}) => {
 
   return (
     <div className={cartClass}>
+      <img src="" alt="" />
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>

@@ -38,13 +38,15 @@ h1{
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  margin-top: 20px;
+  margin-left:2.5%;
+  padding-top: 40px;
   background: white;
   padding-bottom: 20px;
   width: 95%;
+  height: 80%;
+  margin-top: 20px;
+  position: absolute;
+  border-radius: 20px;
 }
 
 .cart-item{
@@ -210,17 +212,20 @@ a{
   height: fit-content;
   padding: 10px 0;
   width: max-content;
- 
+  margin-bottom: 20px;
 }
 .blur{
-  filter: contrast(0.7) blur(1px);
-  
+  filter: contrast(1) blur(1.5px);
+  position: fixed;
 }
 #firstrow{
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+padding: 10px;
 }
+
 #firstrow section div {
   display: flex;
   flex-direction: column;
@@ -557,7 +562,7 @@ p{
   width: 90%;
   justify-content: space-around;
   transition: all 0.5s; 
-  width: 100%;
+  width: 90%;
   border-width: 0px;
   display: flex;
   height: 50px;
@@ -569,14 +574,13 @@ p{
   transform: translateY(24px);
   padding-top: 14px;
 }
-.nav-div{
-  height: 190%;
-}
+
 .nav{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  height: 70px;
  }
  .nav > input{
   width: 50%;
