@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Outlet, Link ,useLoaderData} from "react-router-dom"
+import {  Link } from "react-router-dom"
 import rectangle from "../images/Rectangle 6 (1).png"
 import option from "../images/option.svg"
 
@@ -22,9 +22,9 @@ function Nav({showCart}){
                 setToggle(!toggle)
             }} src={option} alt="" width="35px"></img>
              <div className={toggle ? "quick-links show": "quick-links"}>
-                <a className={toggle ? "links appear": "links"} href="#products">Shop</a>
+                <Link to="/" className={toggle ? "links appear": "links"} >Shop</Link>
                 <a className={toggle ? "links appear": "links"} href="./Aboutus.html">About us</a>
-                <a  onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</a>
+                <a onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</a>
                 <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
             </div>
           
