@@ -1,19 +1,15 @@
 import React from 'react';
 import dustbin from "../images/trash-bin-svgrepo-com.svg"
 import close from "../images/icon-close.svg"
-const Cart = ({ cartItems,cartClass,deleteItem,closeCart}) => {
-  const total = cartItems.reduce((accumulator, current) => (accumulator + current.product.price)* current.quantity, 0);
-
+const Cart = ({cartItems,item,cartClass,deleteItem,closeCart}) => {
+ 
   return (
     <div className={cartClass}>
       <div className='close' onClick={()=>{closeCart()}}><img  src={close} alt="" width={"20px"}  height={"20px"}/></div>
       <h2>Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-<div className='the-cart'>
+     <div className='the-cart'>
 <div>
-          {cartItems.map((item,index) => (
+         
             <div className='cart-item' key={index}>
                <div> <img className='cartItem-img' src={item.product.photo} alt="" width={"150px"} height={"140px"}/></div>
              <div> {item.product.name}</div>
@@ -24,11 +20,11 @@ const Cart = ({ cartItems,cartClass,deleteItem,closeCart}) => {
                     <button className='remove-item-btn' onClick={()=>{deleteItem(item)}}><img  src={dustbin} alt="" width ="20px"/> Remove</button>
                 </div>
             </div>
-          ))}
+        
           <li>Total: {total}</li>
         </div>
 </div>
-      )}
+    
     </div>
   );
 };

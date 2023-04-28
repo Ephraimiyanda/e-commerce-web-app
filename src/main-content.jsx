@@ -140,7 +140,10 @@ const addToCart = (product)=>{
                     
                 </div>
 </div>
-<Cart cartItems={cartItems} cartClass={showcart ? "cart" :"no-display"} closeCart={showCart}/>
+{cartItems.map((item) => (
+    
+<Cart cartItems={cartItems} item={item} cartClass={showcart ? "cart" :"no-display"} closeCart={showCart}/>
+))}
 </div>
                 
                 )
