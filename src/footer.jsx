@@ -1,5 +1,8 @@
+import Nav from "./nav";
 function Footer(){
     return(
+       <div>
+         <div><Nav/></div>
         <footer>
         <div className="footer-links">
    <div className="footer-div">
@@ -50,6 +53,7 @@ function Footer(){
         </div>
 
        </footer>
+       </div>
     )
 }
 export default Footer;

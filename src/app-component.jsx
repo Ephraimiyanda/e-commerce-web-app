@@ -14,9 +14,9 @@ return(
     <div>
         <Routes>
         
-            <Route path="/" element={<MainContent mainClass={showcart ? "blur":"content-container"}/>}/>
+            <Route path="/" element={<MainContent mainClass={showcart ? "blur":"content-container"}/>} />
         
-        
+        <Route path="/cart" element={<Cart/>}/>
         </Routes>
          </div>
 )

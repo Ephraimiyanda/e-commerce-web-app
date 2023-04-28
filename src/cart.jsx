@@ -6,7 +6,7 @@ const Cart = ({ cartItems,cartClass,deleteItem,closeCart}) => {
 
   return (
     <div className={cartClass}>
-      <div className='close' onClick={()=>{close}}><img  src={close} alt="" width={"20px"}  height={"20px"}/></div>
+      <div className='close' onClick={()=>{closeCart()}}><img  src={close} alt="" width={"20px"}  height={"20px"}/></div>
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>

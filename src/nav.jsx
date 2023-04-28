@@ -24,7 +24,7 @@ function Nav({showCart}){
              <div className={toggle ? "quick-links show": "quick-links"}>
                 <Link to="/" className={toggle ? "links appear": "links"} >Shop</Link>
                 <a className={toggle ? "links appear": "links"} href="./Aboutus.html">About us</a>
-                <a onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</a>
+                <Link to="/cart"  onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</Link>
                 <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
             </div>
           
