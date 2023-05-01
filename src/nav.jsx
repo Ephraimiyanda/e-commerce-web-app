@@ -5,7 +5,7 @@ import option from "../images/option.svg"
 
 
 
-function Nav({showCart}){
+function Nav(){
 
    
     const [toggle, setToggle] = useState(false)
@@ -24,7 +24,7 @@ function Nav({showCart}){
              <div className={toggle ? "quick-links show": "quick-links"}>
                 <Link to="/" className={toggle ? "links appear": "links"} >Shop</Link>
                 <a className={toggle ? "links appear": "links"} href="./Aboutus.html">About us</a>
-                <Link to="/cart"  onClick={()=>showCart()} className={toggle ? "links appear": "links"}>Cart</Link>
+                <Link to="/cart"   className={toggle ? "links appear": "links"}>Cart</Link>
                 <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
             </div>
           

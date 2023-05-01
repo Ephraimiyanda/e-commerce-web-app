@@ -1,46 +1,13 @@
-import { useState,useEffect } from "react";
-import { Outlet } from "react-router-dom";
-import Cart from "./cart";
-import Item from "./product";
-import Nav from "./nav";
+import Item from "./product-components/product";
 
 
 function MainContent(){
-const [products,setProduct]=useState([])
-const [cartItems, setCart] = useState([]);
-const [showcart,handleshowCart]=useState(false)
 
-function showCart(){
-handleshowCart(!showcart)
-}
-
-useEffect(()=>{
-    fetch(`http://localhost:8000/product`)
-    .then(res=>{
-     return res.json()
-    })
-    .then(data=>{
-    setProduct(data)
-    })
-    .catch()
-    },[]);
-
-
-const addToCart = (product)=>{
-    setCart([...cartItems, {product, quantity : 1 }]);
- // setTimeout(function(){alert("product added to cart")},1)
-  
-}
 
     return(
-        
-<div >
-    <Nav showCart={showCart}/>
-
-
-<div className={showcart ? "blur":"content-container"}>
+<div className="content-container">
    
-<div className="main-content">
+<div>
             <div className="header--text">
                 <h1>Linkages between <span className="green">farmers</span>  and <span className="green"> consumers </span></h1>
                 <button className="header--btn"><a href="./agric/first.html">Get Started</a></button>
@@ -50,40 +17,36 @@ const addToCart = (product)=>{
                 <h1 className="fruits" href="fruits">Fruits</h1>
                 <div id="firstrow">
 
-     { products.map((product)=>(
-         < Item  product={product} key={product.id} productType="fruit" addToCart={addToCart} />
-     ))}
+         < Item  productType="fruit"  />
+   
               </div>
             </div><div className="products">
                 <h1>Vegetables</h1>
                 <div id="firstrow">
-                {products.map((product)=>(
-         < Item product={product} key={product.id}  productType="vegetable" addToCart={addToCart} />
-     ))}
+         < Item   productType="vegetable"  />
+     
       </div>
             </div>
             <div className="products">
                 <h1>spicies</h1>
                 <div id="firstrow">
-                {products.map((product)=>(
-         < Item product={product}  key={product.id} productType="spice" addToCart={addToCart} />
-     ))}
+         < Item  productType="spice"  />
+    
                     </div>
             </div>
             <div className="products">
                 <h1>Grains</h1>
                 <div id="firstrow">
-                { products.map((product)=>(
-         < Item product={product} key={product.id}  productType="grain" addToCart={addToCart} />
-     ))}
+                
+         < Item   productType="grain"  />
+     
                </div>
             </div>
             <div className="products">
                 <h1>cereals</h1>
                 <div id="firstrow">
-                {products.map((product)=>(
-         < Item product={product} key={product.id}  productType="cereal" addToCart={addToCart} />
-     ))}
+         < Item  productType="cereal"  />
+     
                 </div>
             </div><div className="service">
                 <h2>Hiring Service</h2>
@@ -98,7 +61,11 @@ const addToCart = (product)=>{
 
                                     </div>
                                     <div className="track-paragraph">
-                                        <p>If you're looking for a reliable and efficient service for agro tools hiring, look no further than our company. We specialize in providing top-quality agro tools for all your farming needs. Our tools are specifically designed to make your work easier, faster and more efficient, thereby increasing your productivity and reducing your labor costs.</p>
+                                        <p>If you're looking for a reliable and efficient service for agro tools hiring,
+                                             look no further than our company. We specialize in providing top-quality agro 
+                                             tools for all your farming needs. Our tools are specifically designed to make 
+                                             your work easier, faster and more efficient, thereby increasing your productivity 
+                                             and reducing your labor costs.</p>
                                     </div>
                                 </div>
                         </div>
@@ -140,12 +107,6 @@ const addToCart = (product)=>{
                     
                 </div>
 </div>
-{cartItems.map((item) => (
-    
-<Cart cartItems={cartItems} item={item} cartClass={showcart ? "cart" :"no-display"} closeCart={showCart}/>
-))}
-</div>
-                
-                )
+)
     }
     export default MainContent;
