@@ -674,6 +674,9 @@ text-align: center;
   border-width: 0px;
   background-color: #fff;
 }
+.type button:hover{
+  background-color: #00C341;
+}
 form{
   display: flex;
   flex-direction: column;
