@@ -9,7 +9,6 @@ import ProductOpen from "./product-components/productOpen";
 
 
 function App(){
-    const [isPending,handlePending]=useState(true)
     const [cartItems, setCartItems]=useState([]);
     const addToCart = (product)=>{
         setCartItems([...cartItems ,product])
@@ -24,7 +23,7 @@ return(
 <CartContext.Provider value={{cartItems, addToCart, removeFromCart}} >
 <Router>
 <Nav />
-{isPending && <div className="loading"></div>}
+
         <Switch> 
         <Route exact path="/" component={MainContent} />
         <Route path="/cart" component={Cart}/>
