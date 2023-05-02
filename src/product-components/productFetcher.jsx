@@ -1,20 +1,22 @@
 import { useState,useEffect } from "react";
 const useFetch=(url)=>{
     
-    const [isPending,handlePending]=useState(true) 
+    const [isPending,handlePending]=useState(true)
     const [product,setProduct]=useState([]);
-    {isPending && <div className="loading"></div>}
+
     useEffect(()=>{
+       setTimeout(()=>{
         fetch(url)
         .then(res=>{
          return res.json()
         })
         .then(data=>{
-            handlePending(false)
-        setProduct(data);
+        setProduct(data)
+        handlePending(false)
         })
         .catch()
+       },500)
         },[url]);
-    return{product}
+    return{product,isPending}
 }
 export default useFetch;

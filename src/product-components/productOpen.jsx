@@ -4,12 +4,14 @@ import AddToCartBtn from "../addToCartBtn";
 import Item from "./product";
 function ProductOpen(){
     const {id}= useParams();
-    const {product}=useFetch(`http://localhost:8000/product/`+ id);
+    const {product, isPending}=useFetch(`http://localhost:8000/product/`+ id);
    
 
 
     return(
         <div>
+        {isPending && <div className="loading"></div>}
+         
         {product && (
             <div >
                 <h2>Product information</h2>
