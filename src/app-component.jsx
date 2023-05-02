@@ -23,7 +23,6 @@ return(
 <CartContext.Provider value={{cartItems, addToCart, removeFromCart}} >
 <Router>
 <Nav />
-
         <Switch> 
         <Route exact path="/" component={MainContent} />
         <Route path="/cart" component={Cart}/>
