@@ -1,7 +1,7 @@
 import { useState } from "react";
 function SignUp(){
     const [username,setusername]=useState("");
-    const [phonen umber,setusernumber]=useState("");
+    const [phonenumber,setusernumber]=useState("");
     const [password,setpassword]=useState("");
     const [email,setemail]=useState("");
     const [ispending,handlepending]=useState(false)
