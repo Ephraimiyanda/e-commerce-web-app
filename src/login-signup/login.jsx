@@ -1,6 +1,6 @@
-function login(){
+function Login(){
     return(
         <div></div>
     )
 }
-export default login;
+export default Login;

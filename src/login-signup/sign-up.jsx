@@ -18,18 +18,6 @@ const handleSubmit =(e)=>{
 
     return(
         <div className="login-container">
-        <div className="img">
-            <h1>Welcome to</h1>
-            <img className="img-signup" src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
-            <h2>AGRIFIED</h2>
-            <h3>E-FARM</h3>
-        </div>
-        <div className="details">
-            <h2>Sign Up/Sign In</h2>
-            <div className="type">
-                <button>Customer</button>
-                <button>farmer</button>
-            </div>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">username</label>
                 <input type="text" name="username" value={username} placeholder="username" onChange={(e)=>setusername(e.target.value)}/>
@@ -45,7 +33,7 @@ const handleSubmit =(e)=>{
            
             <h3>Dont have an account? <a href="#">Sign Up</a></h3>
         </div>
-    </div>
+  
     )
 }
 export default SignUp;
