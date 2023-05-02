@@ -626,17 +626,23 @@ background-color: red;
   background-color: #fff;
   
 }
+.welcome-container{
+
+}
+
 
 
 /* login styles */
 .signUpLogin{
   display: flex;
-  justify-content: center;
+  align-content: center;
   margin-top: auto;
   flex-wrap: wrap;
 
 }
 .img-signupLogin{
+  width: 50%;
+  height: 20%;
 }
 form{
   display: flex;
@@ -657,6 +663,9 @@ form input{
   background-color: #00C341;
   color: white;
   margin-bottom: 10px;
+}
+.signup-section{
+  width: 50%;
 }
 
 @media (max-width:1000px) {
