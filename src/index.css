@@ -36,11 +36,16 @@ h1{
   margin-top: 37px;
   margin-right: 10px;
 }
+.cart::-webkit-scrollbar{
+  width: 0px;
+}
 .cart{
+  height: 500px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-bottom: auto;
+  margin-bottom: -30px;
 } 
 .cart h2{
   
@@ -213,9 +218,75 @@ a{
   margin-left: 16px;
   margin-bottom: 40px;
 }
+
 .product-link{
   color: #011D07;
   text-align: center;
+}
+.product-details{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+margin-top: 40px;
+}
+.productDescription-col1{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: auto;
+  padding-left: 10px;
+}
+.productDescription-col1 h2{
+text-align: left;
+margin-top: 20px;
+font-size: 30px;
+}
+.product-photo{
+  width: 300px;
+  height: 250px;
+  }
+
+.qp{
+  margin-top: 10px;
+display: flex;
+justify-content: left;
+gap: 50px;
+
+}
+.qp p{
+  width: 100px;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+.amount{
+margin-top: auto;
+margin-bottom: auto;
+border:1px solid #00C341;
+width: 80px;
+height: 35px;
+text-align: center;
+padding-top: 8px;
+border-radius: 8px;
+}
+.addBtn{
+  width: 250px;
+  height: 35px;
+  border-width: 0px;
+  border-radius: 7px;
+  background-color: #00C341;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.productDescription-col2{
+  display: flex;
+  flex-direction: column;
+width: 50%;
+}
+.product-description{
+  padding-left: 0px;
+  text-align: left;
+  width: 80%;
 }
 .white-background img {
   margin-top: -60px;
@@ -236,11 +307,16 @@ a{
   width: max-content;
   margin-bottom: 20px;
 }
-.blur{
-  filter: contrast(0.9) blur(1.7px);
-  position: fixed;
+dl{
+  text-align: left;
 }
-
+dt{
+  width: 60%;
+}
+dd li{
+  margin-left: 15px;
+  list-style:disc ;
+}
 #firstrow{
 display: flex;
 flex-wrap: wrap;
@@ -517,6 +593,39 @@ button:hover{
 .closebtn{
 background-color: red;
 }
+.more-h2{
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.more-products::-webkit-scrollbar{
+  width: 0px;
+}
+.more-products{
+  width:100%;
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding-left: 10px;
+}
+.productInMore {
+  display: flex;
+  gap: 20px;
+}
+.productInMore img{
+  margin-top: 10px;
+  position: relative;
+}
+.productInMore button{
+  display: none;
+}
+.productInMore .white-background div{
+  background-color: #fff;
+  width: 200px;
+}
+.productInMore .white-background{
+  background-color: #fff;
+  
+}
 @media (max-width:1000px) {
   
   .social-links{
@@ -615,7 +724,18 @@ p{
  .hide{
   transform: rotate(180deg);
 }
-
+.product-photo{
+  width: 90%;
+}
+.qp{
+  gap: 20px;
+}
+.qp p{
+  padding: 0px;
+}
+.product-description {
+padding: 0px;
+}
 }
 
 
@@ -729,6 +849,51 @@ font-size: 17px;
 .service h2{
   margin-top: 20px;
   font-size: 60px;
+}
+.product-details{
+  flex-direction: column;
+  align-content: center;
+}
+.productDescription-col1{
+  width: 100%;
+  padding: 0%;
+  margin-left: 0px;
+}
+.productDescription-col1 h2{
+  text-align: center;
+}
+.product-photo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+height: 300px;
+}
+.qp{
+  width: 100%;
+  gap: 30%;
+  justify-content: center;
+}
+.productDescription-col2{
+  width: 100%;
+}
+.productDescription-col2 h3{
+  margin-top: 20px;
+  text-align: center;
+}
+.addBtn,dt{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-description{
+  margin-top: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+dt{
+  width: 100%;
+  padding: 7px;
 }
 
 }

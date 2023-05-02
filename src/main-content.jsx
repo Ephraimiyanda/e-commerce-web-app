@@ -17,20 +17,20 @@ function MainContent(){
                 <h1 className="fruits" href="fruits">Fruits</h1>
                 <div id="firstrow">
 
-         < Item  productType="fruit"  />
+         < Item productClass={"product-container"}  productType="fruit"  />
    
               </div>
             </div><div className="products">
                 <h1>Vegetables</h1>
                 <div id="firstrow">
-         < Item   productType="vegetable"  />
+         < Item productClass={"product-container"}  productType="vegetable"  />
      
       </div>
             </div>
             <div className="products">
                 <h1>spicies</h1>
                 <div id="firstrow">
-         < Item  productType="spice"  />
+         < Item  productClass={"product-container"} productType="spice"  />
     
                     </div>
             </div>
@@ -38,14 +38,14 @@ function MainContent(){
                 <h1>Grains</h1>
                 <div id="firstrow">
                 
-         < Item   productType="grain"  />
+         < Item productClass={"product-container"}  productType="grain"  />
      
                </div>
             </div>
             <div className="products">
                 <h1>cereals</h1>
                 <div id="firstrow">
-         < Item  productType="cereal"  />
+         < Item productClass={"product-container"} productType="cereal"  />
      
                 </div>
             </div><div className="service">
