@@ -1,13 +1,13 @@
 import { useState } from "react";
 function SignUp(){
     const [username,setusername]=useState("");
-    const [phoneNumber,setusernumber]=useState("");
+    const [phonen umber,setusernumber]=useState("");
     const [password,setpassword]=useState("");
     const [email,setemail]=useState("");
     const [ispending,handlepending]=useState(false)
 const handleSubmit =(e)=>{
     e.preventDefault();
-  const user = { username,email,phoneNumber,password}
+  const user = { username,email,phonenumber,password}
   fetch(`  http://localhost:8000/users`,{
     method:"POST",
     headers:{"content-Type":"application/json"},
@@ -37,7 +37,7 @@ const handleSubmit =(e)=>{
                 <label htmlFor="email">Email</label>
                 <input value={email} type="email" name="email" placeholder="name@gmail.com"  onChange={(e)=>setemail(e.target.value)}></input>
                 <label htmlFor="phone-number">phone number</label>
-                <input type="text" name="phone-number" value={phoneNumber} placeholder="0000-000-0000"  onChange={(e)=>setusernumber(e.target.value)}/>
+                <input type="text" name="phone-number" value={phonenumber} placeholder="0000-000-0000"  onChange={(e)=>setusernumber(e.target.value)}/>
                 <label htmlFor="password">Password</label>
                 <input value={password} type="password" name="password" placeholder="**********"  onChange={(e)=>setpassword(e.target.value)}></input>
                { !ispending && <button className="in">Sign In</button> } 

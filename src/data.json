@@ -1,225 +1,228 @@
 {
-"product": [
+  "product": [
     {
       "name": "Apple",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A round fruit with red, green, or yellow skin and a white inside. Crisp and juicy.",
       "price": 1.99,
-      "id":0
+      "id": 0
     },
     {
       "name": "Banana",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A curved fruit with a yellow skin and a soft inside. Sweet and creamy.",
       "price": 0.79,
-      "id":1
+      "id": 1
     },
     {
       "name": "Carrot",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "description": "A long, orange root vegetable with a sweet taste. Rich in vitamin A.",
       "price": 0.99,
-    "type": "vegetable",
-    "id":2
+      "type": "vegetable",
+      "id": 2
     },
     {
       "name": "Broccoli",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "description": "A green vegetable with a tree-like shape. High in fiber and vitamin C.",
       "price": 2.49,
-    "type": "vegetable",
-    "id":3
+      "type": "vegetable",
+      "id": 3
     },
     {
       "name": "Spinach",
-      "photo":"/images/paw.jpg",
-
+      "photo": "/images/paw.jpg",
       "description": "A leafy green vegetable with a slightly bitter taste. Rich in iron and antioxidants.",
       "price": 1.99,
-    "type": "vegetable",
-    "id":4
+      "type": "vegetable",
+      "id": 4
     },
     {
       "name": "Oatmeal",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "cereal",
       "description": "A hot cereal made from ground oats. High in fiber and protein.",
       "price": 3.99,
-      "id":5
+      "id": 5
     },
     {
       "name": "Brown Rice",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "cereal",
       "description": "A whole grain rice with a nutty flavor. High in fiber and minerals.",
       "price": 4.49,
-      "id":6
+      "id": 6
     },
     {
       "name": "Quinoa",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A gluten-free grain with a slightly nutty taste. Rich in protein and minerals.",
       "price": 6.99,
-      "id":25
+      "id": 25
     },
     {
       "name": "Cinnamon",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A sweet and spicy bark used as a flavoring. Contains antioxidants.",
       "price": 2.99,
-      "id":7
+      "id": 7
     },
     {
       "name": "Turmeric",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A yellow spice used in Indian cuisine. Contains anti-inflammatory compounds.",
       "price": 3.49,
-      "id":8
+      "id": 8
     },
     {
       "name": "Garlic",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A pungent bulb used in many dishes. Contains compounds with health benefits.",
       "price": 0.99,
-      "id":9
+      "id": 9
     },
     {
       "name": "Ginger",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A root with a spicy and slightly sweet taste. Used in cooking and medicine.",
       "price": 1.49,
-      "id":111
+      "id": 111
     },
     {
       "name": "Sweet Potato",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "vegetable",
       "description": "A starchy root vegetable with a sweet taste. Rich in fiber and vitamins.",
       "price": 1.29,
-      "id":11
+      "id": 11
     },
     {
       "name": "Cauliflower",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A white vegetable with a mild taste. High in fiber and vitamin C.",
       "price": 2.99,
-      "id":12
+      "id": 12
     },
     {
       "name": "Almond",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A nut with a crunchy texture and a mild, nutty taste. Rich in healthy fats and antioxidants.",
       "price": 5.99,
-      "id":13
+      "id": 13
     },
     {
       "name": "Peanut",
-     "photo":"/images/paw.jpg",
-     "type": "fruit",
+      "photo": "/images/paw.jpg",
+      "type": "fruit",
       "description": "A legume with a crunchy texture and a slightly sweet taste. Rich in protein and healthy fats.",
       "price": 3.99,
-      "id":14
+      "id": 14
     },
     {
       "name": "Walnut",
-      "photo":"/images/paw.jpg",
+      "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A nut with a rich, buttery taste. High in healthy fats and antioxidants.",
       "price": 6.99,
-      "id":15
+      "id": 15
     },
-     {
-       "name": "Grapes",
-       "photo":"/images/paw.jpg",
-       "type": "fruit",
-        "description": "Juicy and flavorful, great for snacking or making wine.",
-       "price": 1.2,
-       "id":16
-      },
-      {
-       "name": "Pineapple",
-       "photo":"/images/paw.jpg",
-       "type": "fruit",
-        "description": "Sweet and tropical, great in smoothies or as a dessert.",
+    {
+      "name": "Grapes",
+      "photo": "/images/paw.jpg",
+      "type": "fruit",
+      "description": "Juicy and flavorful, great for snacking or making wine.",
+      "price": 1.2,
+      "id": 16
+    },
+    {
+      "name": "Pineapple",
+      "photo": "/images/paw.jpg",
+      "type": "fruit",
+      "description": "Sweet and tropical, great in smoothies or as a dessert.",
       "price": 2.5,
-      "id":17
-      },
-      {
-       "name": "Watermelon",
-       "photo":"/images/paw.jpg",
-       "type": "fruit",
-       "description": "Juicy and refreshing, perfect for hot summer days.",
-       "price": 3,
-       "id":18
-      },
-     
-     
-      {
-       "name": "Kale",
-       "photo":"/images/paw.jpg",
-       "type": "vegetable",
-        "description": "Nutritious and versatile, great in salads or smoothies.",
-        "price": 1,
-        "id":19
-      },
-      {
-       "name": "Lettuce",
-       "photo":"/images/paw.jpg",
-       "type": "vegetable",
-         "description": "Crisp and refreshing, perfect for salads or sandwiches.",
-       "price": 0.4,
-       "id":26
-       
-      },
-      {
-       "name": "Oats",
-      "photo":"/images/paw.jpg",
+      "id": 17
+    },
+    {
+      "name": "Watermelon",
+      "photo": "/images/paw.jpg",
+      "type": "fruit",
+      "description": "Juicy and refreshing, perfect for hot summer days.",
+      "price": 3,
+      "id": 18
+    },
+    {
+      "name": "Kale",
+      "photo": "/images/paw.jpg",
+      "type": "vegetable",
+      "description": "Nutritious and versatile, great in salads or smoothies.",
+      "price": 1,
+      "id": 19
+    },
+    {
+      "name": "Lettuce",
+      "photo": "/images/paw.jpg",
+      "type": "vegetable",
+      "description": "Crisp and refreshing, perfect for salads or sandwiches.",
+      "price": 0.4,
+      "id": 26
+    },
+    {
+      "name": "Oats",
+      "photo": "/images/paw.jpg",
       "type": "Cereal",
       "description": "Heart-healthy and filling, perfect for breakfast.",
-       "price": 1.5,
-       "id":21
-      },
-      {
-       "name": "Rice",
-       "photo":"/images/paw.jpg",
-       "type": "grain",
-        "description": "Versatile and filling, great in stir-fries or as a side dish.",
-      "price": 2,
-      "id":22
-      },
-      {
-       "name": "Wheat",
-       "photo":"/images/paw.jpg",
-       "type": "grain",
-        "description": "Nutritious and versatile, great in breads or as a side dish.",
-       "price": 1.8,
-       "id":23
-      },
-      {
-       "name": "Corn",
-       "photo":"/images/paw.jpg",
-       "type": "grain",
-       "description": "Sweet and flavorful, great in soups or as a side dish.",
-       "price": 1.9,
-       "id":24
-      }
-  
-  ],
-  "users":[
+      "price": 1.5,
+      "id": 21
+    },
     {
-      "username":"Ephraim Iyanda",
-      "email":"iyandaephraim@gmail.com",
-      "phoneNumber":"07042298556",
-      "password":"e1f2i3iyanda"
+      "name": "Rice",
+      "photo": "/images/paw.jpg",
+      "type": "grain",
+      "description": "Versatile and filling, great in stir-fries or as a side dish.",
+      "price": 2,
+      "id": 22
+    },
+    {
+      "name": "Wheat",
+      "photo": "/images/paw.jpg",
+      "type": "grain",
+      "description": "Nutritious and versatile, great in breads or as a side dish.",
+      "price": 1.8,
+      "id": 23
+    },
+    {
+      "name": "Corn",
+      "photo": "/images/paw.jpg",
+      "type": "grain",
+      "description": "Sweet and flavorful, great in soups or as a side dish.",
+      "price": 1.9,
+      "id": 24
+    }
+  ],
+  "users": [
+    {
+      "username": "Ephraim Iyanda",
+      "email": "iyandaephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "e1f2i3iyanda",
+      "id": 0
+    },
+    {
+      "username": "Ephraim1zik",
+      "email": "ephraimiyanda@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "opejdhrr",
+      "id": 1
     }
   ]
 }
