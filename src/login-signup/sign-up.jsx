@@ -6,7 +6,6 @@ function SignUp(){
     const [email,setemail]=useState("");
     const [ispending,handlepending]=useState(false)
 const handleSubmit =(e)=>{
-    e.preventDefault();
   const user = { username,email,phonenumber,password}
   fetch(`  http://localhost:8000/users`,{
     method:"POST",
@@ -18,7 +17,7 @@ const handleSubmit =(e)=>{
 }
 
     return(
-        <div className="container">
+        <div className="login-container">
         <div className="img">
             <h1>Welcome to</h1>
             <img src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
@@ -41,7 +40,7 @@ const handleSubmit =(e)=>{
                 <label htmlFor="password">Password</label>
                 <input value={password} type="password" name="password" placeholder="**********"  onChange={(e)=>setpassword(e.target.value)}></input>
                { !ispending && <button className="in">Sign In</button> } 
-               {ispending && <button>Signing in</button>}
+               {ispending && <button className="signup-btn">Signing in</button>}
             </form>
            
             <h3>Dont have an account? <a href="#">Sign Up</a></h3>
