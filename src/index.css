@@ -637,6 +637,25 @@ background-color: red;
 .img-signupLogin{
   width: 60%;
 }
+form{
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-width: 1px;
+  padding-left: 10px;
+}
+.signup-btn{
+  height: 40px;
+  border: 0px;
+  border-radius: 10px;
+  background-color: #00C341;
+  color: white;
+}
 
 @media (max-width:1000px) {
   

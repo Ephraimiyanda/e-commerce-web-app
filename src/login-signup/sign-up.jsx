@@ -27,8 +27,8 @@ const handleSubmit =(e)=>{
                 <input type="text" name="phone-number" value={phonenumber} placeholder="0000-000-0000"  onChange={(e)=>setusernumber(e.target.value)}/>
                 <label htmlFor="password">Password</label>
                 <input value={password} type="password" name="password" placeholder="**********"  onChange={(e)=>setpassword(e.target.value)}></input>
-               { !ispending && <button className="in">Sign In</button> } 
-               {ispending && <button className="signup-btn">Signing in</button>}
+               { !ispending && <button className="signup-btn">Sign up</button> } 
+               {ispending && <button className="signup-btn">Signing up</button>}
             </form>
            
             <h3>Dont have an account? <a href="#">Sign Up</a></h3>
