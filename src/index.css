@@ -629,8 +629,14 @@ background-color: red;
 
 
 /* login styles */
-
-
+.signUpLogin{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img-signupLogin{
+  width: 60%;
+}
 
 @media (max-width:1000px) {
   

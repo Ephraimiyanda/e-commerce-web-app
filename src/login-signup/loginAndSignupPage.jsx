@@ -1,31 +1,36 @@
 import SignUp from "./sign-up";
 import Login from "./login";
 import {BrowserRouter as Router,Switch, Route} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 function showLoginSignUp(){
     return(
-<div>
-<div>
+<div className="signUpLogin">
+<div >
         <div className="img">
             <h1>Welcome to</h1>
-            <img className="img-signup" src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
+            <img className="img-signupLogin" src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
             <h2>AGRIFIED</h2>
             <h3>E-FARM</h3>
         </div>
         <div className="details">
             <h2>Sign Up/Sign In</h2>
             <div className="type">
-                <button>Customer</button>
-                <button>farmer</button>
+               <Link to="/signup"> <button>Customer</button></Link>
+                <Link to="/login"><button>farmer</button></Link>
             </div>
         </div>
-        </div>
+</div>
+
+       <div>
+    
         <Router>
             <Switch>
-                <Route path="/" component={Login}></Route>
+                <Route path="/login" component={Login}></Route>
                 <Route path="/signup" component={SignUp}></Route>
             </Switch>
         </Router>
+       </div>
 </div>
     )
 }
+export default showLoginSignUp;
