@@ -632,10 +632,11 @@ background-color: red;
 .signUpLogin{
   display: flex;
   justify-content: center;
+  margin-top: auto;
   flex-wrap: wrap;
+
 }
 .img-signupLogin{
-  width: 60%;
 }
 form{
   display: flex;
@@ -655,6 +656,7 @@ form input{
   border-radius: 10px;
   background-color: #00C341;
   color: white;
+  margin-bottom: 10px;
 }
 
 @media (max-width:1000px) {
