@@ -6,7 +6,7 @@ import Nav from "./nav";
 import { CartContext } from "./cart-components/cartContext";
 import { useState } from "react";
 import ProductOpen from "./product-components/productOpen";
-
+import SignUp from "./login-signup/sign-up"
 
 function App(){
     const [cartItems, setCartItems]=useState([]);
@@ -27,6 +27,7 @@ return(
         <Route exact path="/" component={MainContent} />
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
+       <Route path="/signUp" component={SignUp}></Route>
         </Switch>
         <Footer/>
  </Router>

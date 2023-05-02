@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react";
 const useFetch=(url)=>{
     
-    const [isPending,handlePending]=useState(true)
+   
     const [product,setProduct]=useState([]);
 
     useEffect(()=>{
@@ -12,11 +12,10 @@ const useFetch=(url)=>{
         })
         .then(data=>{
         setProduct(data)
-        handlePending(false)
         })
         .catch()
        },500)
         },[url]);
-    return{product,isPending}
+    return{product}
 }
 export default useFetch;
