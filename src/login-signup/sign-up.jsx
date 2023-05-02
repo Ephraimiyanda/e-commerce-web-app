@@ -20,7 +20,7 @@ const handleSubmit =(e)=>{
         <div className="login-container">
         <div className="img">
             <h1>Welcome to</h1>
-            <img src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
+            <img className="img-signup" src="./images/signup/Rectangle 6 (1).png" alt="" height="710px" width="600px"></img>
             <h2>AGRIFIED</h2>
             <h3>E-FARM</h3>
         </div>
