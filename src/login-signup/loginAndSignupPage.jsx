@@ -7,7 +7,7 @@ function showLoginSignUp(){
     return(
 <div className="signUpLogin">
 <div className="img-signupLogin">
-     <img  src={welcomePic} alt="" ></img> 
+     <img  src={welcomePic} alt=""></img> 
     </div>
 
        <div className="signup-section">
