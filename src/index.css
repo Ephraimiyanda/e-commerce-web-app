@@ -648,7 +648,8 @@ background-color: red;
 }
 .img-signupLogin img{
   width: 100%;
-  height: 50%;
+  height: 600px;
+  margin-bottom: -33px;
 }
 form{
   display: flex;
