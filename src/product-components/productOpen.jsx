@@ -26,10 +26,10 @@ function ProductOpen(){
 
              <div className="productDescription-col2">
              <p className="product-description">{product.description}</p>
-             <h3>Farmer</h3>
+             {/* <h3>Farmer</h3>
                 <div>
 
-                </div>
+                </div> */}
              <AddToCartBtn product={product} addToCartBtn={"addBtn"}/>
                <h3>Nutritional value</h3>
               <dl>
