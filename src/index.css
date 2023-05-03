@@ -16,6 +16,7 @@ body{
 .no-display{
   display: none;
 }
+
 /* header */
 .header--text{
   background-image:  url(/images/fruits.jpg);
@@ -632,7 +633,7 @@ background-color: red;
 /* login styles */
 .signUpLogin{
   display: flex;
-  gap: 20px;
+
   align-content: center;
   margin-top: auto;
   flex-wrap: wrap;
@@ -642,13 +643,17 @@ background-color: red;
   margin-left: auto;
   margin-right: auto;
 }
+.login-container a{
+  color:#00C341;
+  margin-left: 10px;
+}
 .img-signupLogin{
   width:50%;
   height: 20%;
 }
 .img-signupLogin img{
-  width: 100%;
-  height: 600px;
+  width: 90%;
+  height: 690px;
   margin-bottom: -33px;
 }
 .details h3{
@@ -662,26 +667,30 @@ text-align: center;
   justify-content: space-between;
   margin-top: 10px;
   background-color: #fff;
+  border-radius: 10px;
 }
 .type a{
   width: 100%;
   color: #011D07;
 }
-.type button{
+.type-button{
+  
+  border-radius: 10px;
   width: 100%;
   height: 30px;
-  padding-bottom: 5px;
   border-width: 0px;
   background-color: #fff;
 }
-.type button:hover{
+.customer{
   background-color: #00C341;
 }
 form{
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
 
 }
+
 form input{
   height: 40px;
   width: 100%;
@@ -689,6 +698,7 @@ form input{
   border-radius: 10px;
   border-width: 1px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .signup-btn{
   width: 100%;
@@ -700,7 +710,7 @@ form input{
   margin-bottom: 10px;
 }
 .signup-section{
-  width: 40%;
+  width: 50%;
 }
 
 @media (max-width:1000px) {

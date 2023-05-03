@@ -2,6 +2,7 @@
   "product": [
     {
       "name": "Apple",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A round fruit with red, green, or yellow skin and a white inside. Crisp and juicy.",
@@ -10,6 +11,7 @@
     },
     {
       "name": "Banana",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A curved fruit with a yellow skin and a soft inside. Sweet and creamy.",
@@ -18,6 +20,7 @@
     },
     {
       "name": "Carrot",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "description": "A long, orange root vegetable with a sweet taste. Rich in vitamin A.",
       "price": 0.99,
@@ -26,6 +29,7 @@
     },
     {
       "name": "Broccoli",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "description": "A green vegetable with a tree-like shape. High in fiber and vitamin C.",
       "price": 2.49,
@@ -34,6 +38,7 @@
     },
     {
       "name": "Spinach",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "description": "A leafy green vegetable with a slightly bitter taste. Rich in iron and antioxidants.",
       "price": 1.99,
@@ -42,6 +47,7 @@
     },
     {
       "name": "Oatmeal",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "cereal",
       "description": "A hot cereal made from ground oats. High in fiber and protein.",
@@ -50,6 +56,7 @@
     },
     {
       "name": "Brown Rice",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "cereal",
       "description": "A whole grain rice with a nutty flavor. High in fiber and minerals.",
@@ -58,6 +65,7 @@
     },
     {
       "name": "Quinoa",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A gluten-free grain with a slightly nutty taste. Rich in protein and minerals.",
@@ -66,6 +74,7 @@
     },
     {
       "name": "Cinnamon",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A sweet and spicy bark used as a flavoring. Contains antioxidants.",
@@ -74,6 +83,7 @@
     },
     {
       "name": "Turmeric",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A yellow spice used in Indian cuisine. Contains anti-inflammatory compounds.",
@@ -82,6 +92,7 @@
     },
     {
       "name": "Garlic",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A pungent bulb used in many dishes. Contains compounds with health benefits.",
@@ -90,6 +101,7 @@
     },
     {
       "name": "Ginger",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A root with a spicy and slightly sweet taste. Used in cooking and medicine.",
@@ -98,6 +110,7 @@
     },
     {
       "name": "Sweet Potato",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "vegetable",
       "description": "A starchy root vegetable with a sweet taste. Rich in fiber and vitamins.",
@@ -106,6 +119,7 @@
     },
     {
       "name": "Cauliflower",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "spice",
       "description": "A white vegetable with a mild taste. High in fiber and vitamin C.",
@@ -114,6 +128,7 @@
     },
     {
       "name": "Almond",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A nut with a crunchy texture and a mild, nutty taste. Rich in healthy fats and antioxidants.",
@@ -122,6 +137,7 @@
     },
     {
       "name": "Peanut",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A legume with a crunchy texture and a slightly sweet taste. Rich in protein and healthy fats.",
@@ -130,6 +146,7 @@
     },
     {
       "name": "Walnut",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "A nut with a rich, buttery taste. High in healthy fats and antioxidants.",
@@ -138,6 +155,7 @@
     },
     {
       "name": "Grapes",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "Juicy and flavorful, great for snacking or making wine.",
@@ -146,6 +164,7 @@
     },
     {
       "name": "Pineapple",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "Sweet and tropical, great in smoothies or as a dessert.",
@@ -154,6 +173,7 @@
     },
     {
       "name": "Watermelon",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "fruit",
       "description": "Juicy and refreshing, perfect for hot summer days.",
@@ -162,6 +182,7 @@
     },
     {
       "name": "Kale",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "vegetable",
       "description": "Nutritious and versatile, great in salads or smoothies.",
@@ -170,6 +191,7 @@
     },
     {
       "name": "Lettuce",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "vegetable",
       "description": "Crisp and refreshing, perfect for salads or sandwiches.",
@@ -178,6 +200,7 @@
     },
     {
       "name": "Oats",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "Cereal",
       "description": "Heart-healthy and filling, perfect for breakfast.",
@@ -186,6 +209,7 @@
     },
     {
       "name": "Rice",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "grain",
       "description": "Versatile and filling, great in stir-fries or as a side dish.",
@@ -194,6 +218,7 @@
     },
     {
       "name": "Wheat",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "grain",
       "description": "Nutritious and versatile, great in breads or as a side dish.",
@@ -202,6 +227,7 @@
     },
     {
       "name": "Corn",
+      "farmer": "",
       "photo": "/images/paw.jpg",
       "type": "grain",
       "description": "Sweet and flavorful, great in soups or as a side dish.",
@@ -215,6 +241,18 @@
       "email": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
       "password": "e1f2i3iyanda",
+      "retypePassword": "e1f2i3iyanda",
+      "id": 0
+    }
+  ],
+  "farmers": [
+    {
+      "username": "Ephraim Iyanda",
+      "shopname": "zik and sons",
+      "email": "iyandaephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "e1f2i3iyanda",
+      "retypePassword": "e1f2i3iyanda",
       "id": 0
     }
   ]

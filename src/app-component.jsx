@@ -28,6 +28,7 @@ return(
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
        <Route path="/signUp" component={showLoginSignUp}></Route>
+       <Route path="/login" component={showLoginSignUp}></Route>
         </Switch>
         <Footer/>
  </Router>
