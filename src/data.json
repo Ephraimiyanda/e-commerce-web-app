@@ -259,6 +259,14 @@
       "password": "09090",
       "retypePassword": "09090",
       "id": 2
+    },
+    {
+      "username": "",
+      "email": "",
+      "phonenumber": "",
+      "password": "",
+      "retypePassword": "",
+      "id": 3
     }
   ],
   "farmers": [

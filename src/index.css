@@ -853,7 +853,9 @@ padding: 0px;
 
 
 @media (max-width:555px) {
-
+.nav{
+height: max-content;
+}
 
    .quick-links{
     gap: 20px;
@@ -868,7 +870,11 @@ padding: 0px;
     height: max-content;
     padding-top: 10px;
     padding-bottom: 16px;
-    margin-top: -24px;
+    margin-top: -24px;    
+  transform: translateY(128px);
+  width: 100%;
+  margin-left: -10px;
+
   }
   .header--text h1{
       font-size:  26px;
@@ -941,7 +947,7 @@ padding: 0px;
   width: 100%;
  }
  p{
-  padding: 20;
+  padding: 20px;
 font-size: 17px;
   text-align: center;
  }
@@ -955,6 +961,7 @@ font-size: 17px;
   display: flex;
   flex-direction: column;
 }
+
 .social-media{
   margin-right:  7px;
 }

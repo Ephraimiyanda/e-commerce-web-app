@@ -23,7 +23,7 @@ function Nav(){
             }} src={option} alt="" width="35px"></img>
              <div className={toggle ? "quick-links show": "quick-links"}>
                 <Link to="/Homepage" className={toggle ? "links appear": "links"} >Shop</Link>
-                <a className={toggle ? "links appear": "links"} href="./Aboutus.html">About us</a>
+                <Link to="/AboutUs" className={toggle ? "links appear": "links"} >About us</Link>
                 <Link to="/cart"   className={toggle ? "links appear": "links"}>Cart</Link>
                 <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
             </div>

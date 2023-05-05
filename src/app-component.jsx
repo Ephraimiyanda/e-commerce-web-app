@@ -8,6 +8,7 @@ import { useState } from "react";
 import ProductOpen from "./product-components/productOpen";
 import Login from "./login-signup/login";
 import SignUp from "./login-signup/sign-up";
+import AboutUs from "./about";
 function App(){
     const [cartItems, setCartItems]=useState([]);
     const addToCart = (product)=>{
@@ -24,10 +25,12 @@ return(
 <Router>
 <Nav />
         <Switch> 
+          
         <Route exact path="/Homepage" component={MainContent} />
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
        <Route path="/signUp" component={SignUp}></Route>
+       <Route path="/AboutUs" component={AboutUs}></Route>
        <Route path="/" component={Login}></Route>
         </Switch>
         <Footer/>
