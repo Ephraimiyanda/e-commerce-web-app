@@ -6,8 +6,8 @@ import Nav from "./nav";
 import { CartContext } from "./cart-components/cartContext";
 import { useState } from "react";
 import ProductOpen from "./product-components/productOpen";
-import showLoginSignUp from "./login-signup/loginAndSignupPage";
-
+import Login from "./login-signup/login";
+import SignUp from "./login-signup/sign-up";
 function App(){
     const [cartItems, setCartItems]=useState([]);
     const addToCart = (product)=>{
@@ -24,11 +24,11 @@ return(
 <Router>
 <Nav />
         <Switch> 
-        <Route exact path="/" component={MainContent} />
+        <Route exact path="/Homepage" component={MainContent} />
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
-       <Route path="/signUp" component={showLoginSignUp}></Route>
-       <Route path="/login" component={showLoginSignUp}></Route>
+       <Route path="/signUp" component={SignUp}></Route>
+       <Route path="/" component={Login}></Route>
         </Switch>
         <Footer/>
  </Router>

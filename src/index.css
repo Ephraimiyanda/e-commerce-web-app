@@ -652,8 +652,8 @@ background-color: red;
   height: 20%;
 }
 .img-signupLogin img{
-  width: 90%;
-  height: 690px;
+  width: 75%;
+  height: 0%;
   margin-bottom: -33px;
 }
 .details h3{
@@ -712,7 +712,17 @@ form input{
 .signup-section{
   width: 50%;
 }
-
+.login-message{
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #00C341;
+}
+.wrong{
+  color: red;
+}
 @media (max-width:1000px) {
   
   .social-links{
@@ -734,8 +744,23 @@ form input{
   .track{
       margin-left: 50px;
   }
+  .login-message{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 00px;
+    margin-top: 0px;
+ 
+  }
 }
 @media (max-width:845px){
+  .login-message{
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 00px;
+    margin-top: 0px;
+ 
+  }
  .social-links{
   display: flex;
   flex-direction: row;
