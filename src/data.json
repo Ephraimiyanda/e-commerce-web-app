@@ -3,7 +3,7 @@
     {
       "name": "Apple",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "A round fruit with red, green, or yellow skin and a white inside. Crisp and juicy.",
       "price": 1.99,
@@ -12,7 +12,7 @@
     {
       "name": "Banana",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "A curved fruit with a yellow skin and a soft inside. Sweet and creamy.",
       "price": 0.79,
@@ -21,7 +21,7 @@
     {
       "name": "Carrot",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "description": "A long, orange root vegetable with a sweet taste. Rich in vitamin A.",
       "price": 0.99,
       "type": "vegetable",
@@ -30,7 +30,7 @@
     {
       "name": "Broccoli",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "description": "A green vegetable with a tree-like shape. High in fiber and vitamin C.",
       "price": 2.49,
       "type": "vegetable",
@@ -39,7 +39,7 @@
     {
       "name": "Spinach",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "description": "A leafy green vegetable with a slightly bitter taste. Rich in iron and antioxidants.",
       "price": 1.99,
       "type": "vegetable",
@@ -48,7 +48,7 @@
     {
       "name": "Oatmeal",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "cereal",
       "description": "A hot cereal made from ground oats. High in fiber and protein.",
       "price": 3.99,
@@ -57,7 +57,7 @@
     {
       "name": "Brown Rice",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "cereal",
       "description": "A whole grain rice with a nutty flavor. High in fiber and minerals.",
       "price": 4.49,
@@ -66,7 +66,7 @@
     {
       "name": "Quinoa",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A gluten-free grain with a slightly nutty taste. Rich in protein and minerals.",
       "price": 6.99,
@@ -75,7 +75,7 @@
     {
       "name": "Cinnamon",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A sweet and spicy bark used as a flavoring. Contains antioxidants.",
       "price": 2.99,
@@ -84,7 +84,7 @@
     {
       "name": "Turmeric",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A yellow spice used in Indian cuisine. Contains anti-inflammatory compounds.",
       "price": 3.49,
@@ -93,7 +93,7 @@
     {
       "name": "Garlic",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A pungent bulb used in many dishes. Contains compounds with health benefits.",
       "price": 0.99,
@@ -102,7 +102,7 @@
     {
       "name": "Ginger",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A root with a spicy and slightly sweet taste. Used in cooking and medicine.",
       "price": 1.49,
@@ -111,7 +111,7 @@
     {
       "name": "Sweet Potato",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "vegetable",
       "description": "A starchy root vegetable with a sweet taste. Rich in fiber and vitamins.",
       "price": 1.29,
@@ -120,7 +120,7 @@
     {
       "name": "Cauliflower",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "spice",
       "description": "A white vegetable with a mild taste. High in fiber and vitamin C.",
       "price": 2.99,
@@ -129,7 +129,7 @@
     {
       "name": "Almond",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "A nut with a crunchy texture and a mild, nutty taste. Rich in healthy fats and antioxidants.",
       "price": 5.99,
@@ -138,7 +138,7 @@
     {
       "name": "Peanut",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "A legume with a crunchy texture and a slightly sweet taste. Rich in protein and healthy fats.",
       "price": 3.99,
@@ -147,7 +147,7 @@
     {
       "name": "Walnut",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "A nut with a rich, buttery taste. High in healthy fats and antioxidants.",
       "price": 6.99,
@@ -156,7 +156,7 @@
     {
       "name": "Grapes",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "Juicy and flavorful, great for snacking or making wine.",
       "price": 1.2,
@@ -165,7 +165,7 @@
     {
       "name": "Pineapple",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "Sweet and tropical, great in smoothies or as a dessert.",
       "price": 2.5,
@@ -174,7 +174,7 @@
     {
       "name": "Watermelon",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "fruit",
       "description": "Juicy and refreshing, perfect for hot summer days.",
       "price": 3,
@@ -183,7 +183,7 @@
     {
       "name": "Kale",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "vegetable",
       "description": "Nutritious and versatile, great in salads or smoothies.",
       "price": 1,
@@ -192,7 +192,7 @@
     {
       "name": "Lettuce",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "vegetable",
       "description": "Crisp and refreshing, perfect for salads or sandwiches.",
       "price": 0.4,
@@ -201,7 +201,7 @@
     {
       "name": "Oats",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "Cereal",
       "description": "Heart-healthy and filling, perfect for breakfast.",
       "price": 1.5,
@@ -210,7 +210,7 @@
     {
       "name": "Rice",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "grain",
       "description": "Versatile and filling, great in stir-fries or as a side dish.",
       "price": 2,
@@ -219,7 +219,7 @@
     {
       "name": "Wheat",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "grain",
       "description": "Nutritious and versatile, great in breads or as a side dish.",
       "price": 1.8,
@@ -228,7 +228,7 @@
     {
       "name": "Corn",
       "farmer": "",
-      "photo": "/images/paw.jpg",
+      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
       "type": "grain",
       "description": "Sweet and flavorful, great in soups or as a side dish.",
       "price": 1.9,
