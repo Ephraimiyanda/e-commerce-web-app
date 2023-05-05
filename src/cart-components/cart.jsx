@@ -34,7 +34,6 @@ console.log(cartItems)
            </div>
           ))}
           
-          <li>Total:{total}</li>
         </div>
 </div>
       )}
