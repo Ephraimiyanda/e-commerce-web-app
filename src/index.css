@@ -769,6 +769,7 @@ form input{
   .options{
       display: block;
 transition: all 0.5s;
+margin-right: 10px;
   }
 
 
