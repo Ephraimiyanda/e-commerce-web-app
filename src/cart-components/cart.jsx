@@ -3,12 +3,19 @@ import dustbin from "../../images/trash-bin-svgrepo-com.svg"
 import { CartContext } from '../cart-components/cartContext';
 import { Link } from 'react-router-dom';
 const Cart = () => {
-  const {cartItems,removeFromCart}=useContext(CartContext)
+  const {cartItems,removeFromCart,quantity,addQuantity,reduceQuantity}=useContext(CartContext)
   
  const total = cartItems.reduce((accumulator, current) => (accumulator + current.price)* current.quantity, 0);
 
  function remove(product){
   removeFromCart(product)
+}
+
+function additemQuantity(quantity){
+  addQuantity(quantity)
+}
+function reduceitemQuantity(quantity){
+  reduceQuantity(quantity)
 }
 console.log(cartItems)
   return (
@@ -25,8 +32,17 @@ console.log(cartItems)
               <div className='cart-item' key={index} >
               <div> <img className='cartItem-img' src={items.photo} alt="" width={"150px"} height={"140px"}/></div>
               <Link className="product-link" to={`/product/${items.id}`}><div> {items.name}</div></Link>
-              <div> {items.price}</div>
-               <div>  {items.quantity} </div>
+              <div> ₦ {items.price}</div>
+              <div className='increament_decreament-container'>
+                <p>{items.quantity}</p>
+              <div className='increament_decreament'>
+                <button onClick={()=>{
+                  reduceitemQuantity(items)
+                }}>-</button>
+                <button onClick={()=>{
+                  additemQuantity(items)}}>+</button>
+               </div>
+              </div>
                <div className='cart-btns'>
                    <button className='payment-btn'>Make Payment</button>
                    <button className='remove-item-btn' onClick={()=>{remove(items)}} ><img  src={dustbin} alt="" width ="20px"/> Remove</button>
@@ -37,6 +53,7 @@ console.log(cartItems)
         </div>
 </div>
       )}
+      <p>Total:{total}</p>
     </div>
   );
 };

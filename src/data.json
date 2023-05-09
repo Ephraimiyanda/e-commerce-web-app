@@ -243,30 +243,6 @@
       "password": "e1f2i3iyanda",
       "retypePassword": "e1f2i3iyanda",
       "id": 0
-    },
-    {
-      "username": "bjkl",
-      "email": "iyandaephraim@gmail.co",
-      "phonenumber": "iyandaephraim@gmail.com",
-      "password": "80809",
-      "retypePassword": "80809",
-      "id": 1
-    },
-    {
-      "username": "iyandaephraim@gmail.com",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "595043923230",
-      "password": "09090",
-      "retypePassword": "09090",
-      "id": 2
-    },
-    {
-      "username": "",
-      "email": "",
-      "phonenumber": "",
-      "password": "",
-      "retypePassword": "",
-      "id": 3
     }
   ],
   "farmers": [

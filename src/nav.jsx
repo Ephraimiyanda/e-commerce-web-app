@@ -25,7 +25,7 @@ function Nav(){
                 <Link to="/Homepage" className={toggle ? "links appear": "links"} >Shop</Link>
                 <Link to="/AboutUs" className={toggle ? "links appear": "links"} >About us</Link>
                 <Link to="/cart"   className={toggle ? "links appear": "links"}>Cart</Link>
-                <a className={toggle ? "links appear": "links"} href="/#">My profile</a>
+                <Link to="Profile" className={toggle ? "links appear": "links"} href="/#">My profile</Link>
             </div>
           
         </div>

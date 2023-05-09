@@ -56,7 +56,8 @@ h1{
   display: flex;
   align-content: center;
   justify-content: center;
-  
+  margin: 0px;
+  padding: 0px;
 }
 .cart-item{
   padding-top:15px ;
@@ -723,6 +724,28 @@ form input{
 .wrong{
   color: red;
 }
+.increament_decreament{
+  display: flex;
+  gap: 5px;
+}
+.increament_decreament-container{
+  display: flex;
+  flex-direction: column;
+}
+.increament_decreament{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+.increament_decreament button{
+  width: 26px;
+  height: 26px;
+  background: #1edc5d;
+  border: 0px;
+  color: white;
+  border-radius: 4px;
+}
+
 @media (max-width:1000px) {
   
   .social-links{
