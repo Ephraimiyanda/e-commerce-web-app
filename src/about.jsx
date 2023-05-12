@@ -1,5 +1,6 @@
 
 import rectangle from "/images/people/Rectangle 38.png"
+import about from "/images/Rectangle 46.png"
 function AboutUs(){
     return(
       <div className="about-container">
@@ -10,7 +11,7 @@ function AboutUs(){
         <h4>About Us</h4>
         <p>Welcome to our Agro e-commerce site! We are a team of passionate individuals who believe in the power of agriculture and it's ability to positively impact our world. </p>
     </div>
-    <img class="fruit" src="./images/Rectangle 46.png" alt=""></img>
+    <img class="fruit" src={about} alt=""></img>
         <div class="class2">
             <h4>  Vision</h4>
             <p> We are committed to sustainability and reducing our environmental footprint. That's why we work with farmers who practice sustainable farming methods, and we aim to minimize waste throughout our supply chain. </p>
