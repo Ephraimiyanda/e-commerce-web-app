@@ -4,7 +4,7 @@ import AddToCartBtn from "../addToCartBtn";
 import Item from "./product";
 function ProductOpen(){
     const {id}= useParams();
-    const {product}=useFetch(`http://localhost:8000/product/`+ id);
+    const {product}=useFetch(`http://localhost:3000/product/`+ id);
    
 
 

@@ -243,6 +243,22 @@
       "password": "e1f2i3iyanda",
       "retypePassword": "e1f2i3iyanda",
       "id": 0
+    },
+    {
+      "username": "Ephraim ",
+      "email": "iyandaephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "wetlif",
+      "retypePassword": "wetlif",
+      "id": 1
+    },
+    {
+      "username": "Ephraim Iyanda ",
+      "email": "iyandaephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "qwerty",
+      "retypePassword": "qwerty",
+      "id": 2
     }
   ],
   "farmers": [
