@@ -1,5 +1,5 @@
 
-import rectangle from "/images/people/rectangle 38.png"
+import rectangle from "/images/people/Rectangle 38.png"
 function AboutUs(){
     return(
       <div className="about-container">
