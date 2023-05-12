@@ -1,4 +1,4 @@
-import blackman from "/images/blackman.jpg"
+
 import rectangle from "/images/people/rectangle 38.png"
 function AboutUs(){
     return(
