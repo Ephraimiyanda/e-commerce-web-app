@@ -24,7 +24,7 @@ function SignUp(){
     }
 const handleSubmit =(e)=>{
   const user = { username,email,phonenumber,password,retypePassword}
-  fetch(`  http://localhost:8000/users`,{
+  fetch(`  http://localhost:3000/users`,{
     method:"POST",
     headers:{"content-Type":"application/json"},
     body:JSON.stringify(user)
@@ -41,7 +41,7 @@ const handleSubmit =(e)=>{
 
 const handleSubmitForFarmers=(e)=>{
     const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword,retypePassword}
-    fetch(`http://localhost:8000/farmers`,{
+    fetch(`http://localhost:3000/farmers`,{
       method:"POST",
       headers:{"content-Type":"application/json"},
       body:JSON.stringify(farmer)

@@ -24,7 +24,7 @@ const{handleProfile}=useContext(CartContext);
   async function onLogin(e) {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:8000/users?email=${email}&password=${password}`,
+      `http://localhost:3000/users?email=${email}&password=${password}`,
       { method: "GET" }
     );
     const customer = await response.json();
@@ -46,7 +46,7 @@ const{handleProfile}=useContext(CartContext);
   async function onLoginForFarmers(e) {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:8000/farmers?farmerEmail=${farmerEmail}&farmerPassword=${farmerPassword}`,
+      `http://localhost:3000/farmers?farmerEmail=${farmerEmail}&farmerPassword=${farmerPassword}`,
       { method: "GET" }
     );
     const farmers = await response.json();

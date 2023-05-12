@@ -4,7 +4,7 @@ import AddToCartBtn from "../addToCartBtn";
 import useFetch from "./productFetcher";
 
 const Item=({productType,productClass})=>{
-const {product}=useFetch(`http://localhost:8000/product`);
+const {product}=useFetch(`http://localhost:3000/product`);
 
  
 
