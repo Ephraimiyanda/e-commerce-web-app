@@ -245,19 +245,19 @@
       "id": 0
     },
     {
-      "username": "Ephraim ",
-      "email": "iyandaephraim@gmail.com",
+      "username": "bjkl",
+      "email": "iyandaephraim@gmail.co",
       "phonenumber": "07042298556",
-      "password": "wetlif",
-      "retypePassword": "wetlif",
+      "password": "20222",
+      "retypePassword": "20222",
       "id": 1
     },
     {
-      "username": "Ephraim Iyanda ",
+      "username": "ephraim@zik",
       "email": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
-      "password": "qwerty",
-      "retypePassword": "qwerty",
+      "password": "20222",
+      "retypePassword": "20222",
       "id": 2
     }
   ],
@@ -270,6 +270,15 @@
       "farmerPassword": "e1f2i3iyanda",
       "retypePassword": "e1f2i3iyanda",
       "id": 0
+    },
+    {
+      "username": "ephraim@zik",
+      "farmerEmail": "iyandaephraim@gmail.com",
+      "shopname": "nhub",
+      "phonenumber": "07042298556",
+      "farmerPassword": "20222",
+      "retypePassword": "20222",
+      "id": 1
     }
   ]
 }

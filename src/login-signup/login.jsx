@@ -14,12 +14,8 @@ function Login() {
   const [farmerPassword, setFarmerPassword] = useState("");
   const [farmerLoginMessage, setFarmerLoginMessage] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
-const{handleProfile}=useContext(CartContext);
 
-  const MyProfile=(product)=>{
-    handleProfile(product)
-  }
-
+const {handleProfile}=useContext(CartContext)
 
   async function onLogin(e) {
     e.preventDefault();
@@ -33,7 +29,8 @@ const{handleProfile}=useContext(CartContext);
     if (customer.length > 0) {
       setLoginMessage(<p className="login-message">Welcome back</p>);
       setLoggedIn(true);
-      MyProfile(customer);
+      handleProfile(customer);
+      localStorage.setItem("user",JSON.stringify(customer))
     } else {
       setLoginMessage(
         <p className="login-message wrong">
@@ -108,7 +105,7 @@ const{handleProfile}=useContext(CartContext);
                 <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <label htmlFor="farmer-password">Password</label>
                 <input type="password" name="farmer-password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                {farmerLoginMessage && <p className={loginMessage.includes("Wrong") ? "login-message wrong" : "login-message"}>{loginMessage}</p>}
+                {loginMessage}
                 <button className="signup-btn">Sign In</button>
               </form>
               <h3>Don't have an account?<Link to="/signUp">SIGN UP</Link></h3>
@@ -120,7 +117,7 @@ const{handleProfile}=useContext(CartContext);
                 <input type="text" name="email" value={farmerEmail} onChange={(e) => setFarmerEmail(e.target.value)} />
                 <label htmlFor="farmer-password">Password</label>
                 <input type="password" name="farmer-password" value={farmerPassword} onChange={(e) => setFarmerPassword(e.target.value)} />
-                {farmerLoginMessage && <p className={farmerLoginMessage.includes("Wrong") ? "login-message wrong" : "login-message"}>{farmerLoginMessage}</p>}
+                {farmerLoginMessage}
                 <button className="signup-btn">Sign In</button>
               </form>
               <h3>Don't have an account?<Link to="/signUp">SIGN UP</Link></h3>

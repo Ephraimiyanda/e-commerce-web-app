@@ -29,7 +29,6 @@ const handleSubmit =(e)=>{
     headers:{"content-Type":"application/json"},
     body:JSON.stringify(user)
   }).then(()=>{
-    handlepending(false)
     setloggedIn(true)
   })
 .catch()
@@ -46,7 +45,6 @@ const handleSubmitForFarmers=(e)=>{
       headers:{"content-Type":"application/json"},
       body:JSON.stringify(farmer)
     }).then(()=>{
-      handlepending(false)
       setloggedIn(true)
     })
 .catch()
@@ -80,9 +78,9 @@ if(loggedIn){
             <form onSubmit={(e)=>{
                
                 e.preventDefault()
-                if(password===retypePassword){
+                if(password === retypePassword){
                     handleSubmit();
-                }else{
+                }else {
                     alert("no match")
                 }
             }}>
@@ -107,7 +105,7 @@ if(loggedIn){
 
             <form onSubmit={(e)=>{
              e.preventDefault()
-                if(password===retypePassword){
+                if(farmerPassword===retypePassword){
                     handleSubmitForFarmers();
                 }else{
                     alert("password does not match")

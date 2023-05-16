@@ -10,11 +10,13 @@ import Login from "./login-signup/login";
 import SignUp from "./login-signup/sign-up";
 import AboutUs from "./about";
 import Profile from "./profile/profile";
+import { Suspense } from "react";
+import Loading from "./loading";
 function App(){
     const [cartItems, setCartItems]=useState([]);
     const[quantity,setquantity]=useState(1)
     const [user,setUser]=useState(null);
-
+    
 
     const handleProfile=(product)=>{
         setUser(product)
@@ -52,13 +54,15 @@ return(
 <Nav />
         <Switch> 
           
-        <Route exact path="/Homepage" component={MainContent} />
+       <Suspense fallback={<Loading/>}>
+       <Route exact path="/Homepage" component={MainContent} />
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
        <Route path="/signUp" component={SignUp}></Route>
        <Route path="/AboutUs" component={AboutUs}></Route>
        <Route path="/Profile" component={Profile}></Route>
        <Route path="/" component={Login}></Route>
+       </Suspense>
        
         </Switch>
         <Footer/>

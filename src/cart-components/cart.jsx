@@ -53,7 +53,7 @@ console.log(cartItems)
         </div>
 </div>
       )}
-      <p>Total:{total}</p>
+      <p>Total:{parseFloat((total).toFixed(2))}</p>
     </div>
   );
 };

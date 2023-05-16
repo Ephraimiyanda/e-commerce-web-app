@@ -746,6 +746,127 @@ form input{
   border-radius: 4px;
 }
 
+/*dashboard styles*/
+.dashboard-nav a {
+  color: #333333;
+}
+nav .dashboard-logo {
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+.dashboard-input {
+  /* outline: none; */
+  background: rgba(255, 255, 255, 0.22);
+  color: #adadad;
+  font-size: 16px;
+  padding: 7px 25px;
+  /* border: 0.343565px solid #03771d; */
+  border-radius: 15px;
+}
+.dashboard-input {
+  position: relative;
+}
+.dashboard-search {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 15px;
+  cursor: pointer;
+}
+.dashboard-nav {
+  border-bottom: 1px solid #c4cbde;
+  padding: 10px 50px;
+}
+.head {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.head h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.profile-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 70px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border: 1px solid #c4cbde;
+  margin: 10px 0;
+  max-height: 90%;
+  padding: 20px 30px;
+}
+aside ul li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+aside ul li a {
+  text-decoration: none;
+  color: #011d07;
+  text-transform: capitalize;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile img {
+  width: 100px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 60%;
+}
+.fund {
+  background-color: #00c341;
+  border: none;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.wallet-balance {
+  width: 100%;
+  background: linear-gradient(93.88deg, #00c341 -1.8%, #00ff85 79.43%);
+  margin-top: 40px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.edit-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  border-bottom: 1px solid #c4cbde;
+  padding-bottom: 15px;
+  border: none;
+}
+.edit {
+  background: #00c341;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.profile-dashboard p{
+padding: 0px;
+font-size:15px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
 @media (max-width:1000px) {
   
   .social-links{
@@ -877,6 +998,21 @@ padding: 0px;
 
 
 @media (max-width:555px) {
+  .img-signupLogin{
+    display: none;
+  }
+  .signup-section{
+    width: 100%;
+  }
+  .type{
+    width: 90%;
+  }
+.login-container{
+  width: 90%;
+}
+.login-container h3 a{
+ margin-left: 0px;
+}
 .nav{
 height: max-content;
 }
