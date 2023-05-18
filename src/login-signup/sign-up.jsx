@@ -22,8 +22,9 @@ function SignUp(){
     function flipSwitchBack(){
         setswitch(true)
     }
+    
 const handleSubmit =(e)=>{
-  const user = { username,email,phonenumber,password,retypePassword}
+  const user = { username,email,phonenumber,password}
   fetch(`  http://localhost:3000/users`,{
     method:"POST",
     headers:{"content-Type":"application/json"},
@@ -39,7 +40,7 @@ const handleSubmit =(e)=>{
 
 
 const handleSubmitForFarmers=(e)=>{
-    const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword,retypePassword}
+    const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword}
     fetch(`http://localhost:3000/farmers`,{
       method:"POST",
       headers:{"content-Type":"application/json"},

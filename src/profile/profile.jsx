@@ -34,11 +34,11 @@ function Profile() {
                     </div>
 
                     <div className="wallet-balance">
-                        <div>
+                        <div className="wallet-block">
                             <h4>Wallet Balance</h4>
                             <p>#5000</p>
                         </div>
-                        <div>
+                        <div className="fund-div">
                             <button className="fund">Fund Wallet</button>
                         </div>
                     </div>

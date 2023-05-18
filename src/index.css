@@ -865,7 +865,9 @@ font-size:15px;
 padding-top: 10px;
 padding-bottom: 10px;
 }
-
+.wallet-block p{
+  padding: 0;
+}
 
 @media (max-width:1000px) {
   
@@ -998,6 +1000,21 @@ padding: 0px;
 
 
 @media (max-width:555px) {
+  .wallet-block h4{
+    text-align: center;
+  }
+  .fund-div{
+    display: flex;
+  }
+  .fund{
+    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .wallet-balance{
+    display: flex;
+    flex-direction: column;
+  }
   .img-signupLogin{
     display: none;
   }
