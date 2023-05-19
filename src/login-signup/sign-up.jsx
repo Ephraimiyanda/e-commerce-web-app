@@ -14,7 +14,10 @@ function SignUp(){
     const [shopname,setshopname]=useState("");
     const [switchsignups,setswitch]=useState(false);
     const[loggedIn,setloggedIn]=useState(false);
-
+    const now = new Date();
+    const month =now.toLocaleString("default",{month:"long"});
+    const year =now.getFullYear()
+    const day=now.getDate();
 
     function flipSwitch(){
         setswitch(false)
@@ -22,9 +25,10 @@ function SignUp(){
     function flipSwitchBack(){
         setswitch(true)
     }
-    
+  const  DateJoined = `${day} of ${month} ${year}`;
+
 const handleSubmit =(e)=>{
-  const user = { username,email,phonenumber,password}
+  const user = { username,email,phonenumber,password,DateJoined}
   fetch(`  http://localhost:3000/users`,{
     method:"POST",
     headers:{"content-Type":"application/json"},
@@ -40,7 +44,7 @@ const handleSubmit =(e)=>{
 
 
 const handleSubmitForFarmers=(e)=>{
-    const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword}
+    const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword,DateJoined}
     fetch(`http://localhost:3000/farmers`,{
       method:"POST",
       headers:{"content-Type":"application/json"},

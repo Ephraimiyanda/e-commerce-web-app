@@ -868,6 +868,58 @@ padding-bottom: 10px;
 .wallet-block p{
   padding: 0;
 }
+aside{
+  padding: 0px;
+}
+aside ul li {
+  width: fit-content;
+  display: flex;
+}
+aside ul li a{
+  width: 160px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+}
+aside ul li:hover{
+ background-color: #00C341;
+}
+.logout-btn{
+  background-color: #fff;
+  width: 160px;
+  text-align: left;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  border: 0px;
+  font-size: 15px;
+  padding-left: 16px;
+}
+.logout-btn:hover{
+  background: #00C341;
+}
+.total{
+  width: 200px;
+  background: white;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: auto;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.total span{
+  font-size: larger;
+  padding: 0px;
+  margin: 0px;
+}
+.total p{
+  width: 90px;
+  border-radius: 5px;
+  background: #00C341;
+  margin-left: auto;
+}
 
 @media (max-width:1000px) {
   
@@ -998,8 +1050,8 @@ padding: 0px;
 }
 
 
-
 @media (max-width:555px) {
+
   .wallet-block h4{
     text-align: center;
   }

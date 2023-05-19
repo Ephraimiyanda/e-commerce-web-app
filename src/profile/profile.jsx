@@ -1,13 +1,27 @@
+import { useContext, useState } from "react"
+import { CartContext } from "../cart-components/cartContext"
+import { Redirect } from "react-router-dom"
 
-function Profile() {
-    const storedUser = localStorage.getItem("user")
-    const user =JSON.parse(storedUser)
+function Profile(){
+    
+    const storedUser = localStorage.getItem("user");
+    const loggedInUser =JSON.parse(storedUser);
+    const [redirect,setRedirect]=useState(false)
+    const {logout,user,setUser}=useContext(CartContext)
+
+    const Logout=()=>{
+    setUser(null);
+    localStorage.removeItem("user");
+    setRedirect(true)
+   }
+
+   if(redirect){
+    return <Redirect to="/"/>
+}
     return (
     <div> 
-      
- {
-    user && user.map((users)=>
-    <><div className="head">
+  
+    <div><div className="head ">
             <h1>My Account</h1>
         </div><section className="profile-box">
                 <aside>
@@ -18,17 +32,25 @@ function Profile() {
                         <li><a href="">payments</a></li>
                         <li><a href="">transaction</a></li>
                         <li><a href="">change password</a></li>
-                        <li><a href="">logout</a></li>
+                        <li><button className="logout-btn" onClick={Logout}
+                            
+                            >logout</button></li>
                     </ul>
                 </aside>
                 <main>
                     <div className="profile-dashboard">
                         <div className="profile">
+                            
+                            { loggedInUser.map((users)=>
                             <div>
-                                <h4>{users.username}</h4>
-                                <p>Joined March,2023</p>
-                                <h5>Lagos Nigeria</h5>
-                            </div>
+                             <h4>{users.username}</h4>
+                             <p>{users.DateJoined}</p>
+
+                             <h5>Lagos Nigeria</h5>
+                             </div>
+                           )}
+                                
+                            
                         </div>
                         <div className="edit-btn"><button className="edit">Edit Profile</button></div>
                     </div>
@@ -44,9 +66,8 @@ function Profile() {
                     </div>
                 </main>
 
-            </section></>
-   )
- }
+            </section></div>
+   
     </div>
     )}    
     export default Profile;

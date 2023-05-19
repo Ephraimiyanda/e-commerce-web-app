@@ -7,7 +7,6 @@ function AddToCartBtn({product,addToCartBtn}){
    
 const handleCart=(product)=>{
 addToCart(product);
-console.log(product)
 }
 return(
     <button className={addToCartBtn} onClick={()=>{handleCart(product)}} >Add to cart</button>

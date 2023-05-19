@@ -3,7 +3,7 @@
     {
       "name": "Apple",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=600",
       "type": "fruit",
       "description": "A round fruit with red, green, or yellow skin and a white inside. Crisp and juicy.",
       "price": 1.99,
@@ -21,7 +21,7 @@
     {
       "name": "Carrot",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "description": "A long, orange root vegetable with a sweet taste. Rich in vitamin A.",
       "price": 0.99,
       "type": "vegetable",
@@ -30,7 +30,7 @@
     {
       "name": "Broccoli",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/47347/broccoli-vegetable-food-healthy-47347.jpeg?auto=compress&cs=tinysrgb&w=400",
       "description": "A green vegetable with a tree-like shape. High in fiber and vitamin C.",
       "price": 2.49,
       "type": "vegetable",
@@ -39,7 +39,7 @@
     {
       "name": "Spinach",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/3298064/pexels-photo-3298064.jpeg?auto=compress&cs=tinysrgb&w=400",
       "description": "A leafy green vegetable with a slightly bitter taste. Rich in iron and antioxidants.",
       "price": 1.99,
       "type": "vegetable",
@@ -48,7 +48,7 @@
     {
       "name": "Oatmeal",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/216951/pexels-photo-216951.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "cereal",
       "description": "A hot cereal made from ground oats. High in fiber and protein.",
       "price": 3.99,
@@ -57,7 +57,7 @@
     {
       "name": "Brown Rice",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/4110253/pexels-photo-4110253.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "cereal",
       "description": "A whole grain rice with a nutty flavor. High in fiber and minerals.",
       "price": 4.49,
@@ -66,7 +66,7 @@
     {
       "name": "Quinoa",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://media.istockphoto.com/id/815162944/photo/quinoa-seeds.jpg?s=612x612&w=is&k=20&c=S_dGhNA_Vv_QgJD4MXKO9OYL3fOdJVKXJztaknMnHEw=",
       "type": "spice",
       "description": "A gluten-free grain with a slightly nutty taste. Rich in protein and minerals.",
       "price": 6.99,
@@ -75,7 +75,7 @@
     {
       "name": "Cinnamon",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/71128/cinnamon-cinnamon-stick-rod-kitchen-71128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "spice",
       "description": "A sweet and spicy bark used as a flavoring. Contains antioxidants.",
       "price": 2.99,
@@ -84,7 +84,7 @@
     {
       "name": "Turmeric",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "spice",
       "description": "A yellow spice used in Indian cuisine. Contains anti-inflammatory compounds.",
       "price": 3.49,
@@ -93,7 +93,7 @@
     {
       "name": "Garlic",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1392585/pexels-photo-1392585.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "spice",
       "description": "A pungent bulb used in many dishes. Contains compounds with health benefits.",
       "price": 0.99,
@@ -102,7 +102,7 @@
     {
       "name": "Ginger",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1337585/pexels-photo-1337585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "spice",
       "description": "A root with a spicy and slightly sweet taste. Used in cooking and medicine.",
       "price": 1.49,
@@ -111,7 +111,7 @@
     {
       "name": "Sweet Potato",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/7543201/pexels-photo-7543201.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "vegetable",
       "description": "A starchy root vegetable with a sweet taste. Rich in fiber and vitamins.",
       "price": 1.29,
@@ -120,7 +120,7 @@
     {
       "name": "Cauliflower",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1227806/pexels-photo-1227806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "spice",
       "description": "A white vegetable with a mild taste. High in fiber and vitamin C.",
       "price": 2.99,
@@ -129,7 +129,7 @@
     {
       "name": "Almond",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1013420/pexels-photo-1013420.jpeg?auto=compress&cs=tinysrgb&w=600",
       "type": "fruit",
       "description": "A nut with a crunchy texture and a mild, nutty taste. Rich in healthy fats and antioxidants.",
       "price": 5.99,
@@ -138,7 +138,7 @@
     {
       "name": "Peanut",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/209345/pexels-photo-209345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "fruit",
       "description": "A legume with a crunchy texture and a slightly sweet taste. Rich in protein and healthy fats.",
       "price": 3.99,
@@ -147,7 +147,7 @@
     {
       "name": "Walnut",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/45211/walnuts-nuts-healthy-shell-45211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "fruit",
       "description": "A nut with a rich, buttery taste. High in healthy fats and antioxidants.",
       "price": 6.99,
@@ -156,7 +156,7 @@
     {
       "name": "Grapes",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "fruit",
       "description": "Juicy and flavorful, great for snacking or making wine.",
       "price": 1.2,
@@ -165,7 +165,7 @@
     {
       "name": "Pineapple",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/947879/pexels-photo-947879.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "fruit",
       "description": "Sweet and tropical, great in smoothies or as a dessert.",
       "price": 2.5,
@@ -174,7 +174,7 @@
     {
       "name": "Watermelon",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/59830/melons-water-melons-fruit-green-59830.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "fruit",
       "description": "Juicy and refreshing, perfect for hot summer days.",
       "price": 3,
@@ -183,7 +183,7 @@
     {
       "name": "Kale",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/2499671/pexels-photo-2499671.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "vegetable",
       "description": "Nutritious and versatile, great in salads or smoothies.",
       "price": 1,
@@ -192,7 +192,7 @@
     {
       "name": "Lettuce",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1199562/pexels-photo-1199562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "type": "vegetable",
       "description": "Crisp and refreshing, perfect for salads or sandwiches.",
       "price": 0.4,
@@ -201,7 +201,7 @@
     {
       "name": "Oats",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/87824/oats-oat-field-arable-cereals-87824.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "Cereal",
       "description": "Heart-healthy and filling, perfect for breakfast.",
       "price": 1.5,
@@ -210,7 +210,7 @@
     {
       "name": "Rice",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "grain",
       "description": "Versatile and filling, great in stir-fries or as a side dish.",
       "price": 2,
@@ -219,7 +219,7 @@
     {
       "name": "Wheat",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1974627/pexels-photo-1974627.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "grain",
       "description": "Nutritious and versatile, great in breads or as a side dish.",
       "price": 1.8,
@@ -228,7 +228,7 @@
     {
       "name": "Corn",
       "farmer": "",
-      "photo": "https://th.bing.com/th/id/R.6e34dfbf09c363daa097d73cd0331e80?rik=EO%2bau3brJvUeZg&pid=ImgRaw&r=0",
+      "photo": "https://images.pexels.com/photos/1353493/pexels-photo-1353493.jpeg?auto=compress&cs=tinysrgb&w=400",
       "type": "grain",
       "description": "Sweet and flavorful, great in soups or as a side dish.",
       "price": 1.9,
@@ -241,7 +241,7 @@
       "email": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
       "password": "e1f2i3iyanda",
-      "retypePassword": "e1f2i3iyanda",
+      "DateJoined": "10 of May 2023",
       "id": 0
     },
     {
@@ -249,7 +249,7 @@
       "email": "iyandaephraim@gmail.co",
       "phonenumber": "07042298556",
       "password": "20222",
-      "retypePassword": "20222",
+      "DateJoined": "10 of May 2023",
       "id": 1
     },
     {
@@ -257,8 +257,24 @@
       "email": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
       "password": "20222",
-      "retypePassword": "20222",
+      "DateJoined": "10 May of 2023",
       "id": 2
+    },
+    {
+      "username": "ephraim@zik",
+      "email": "ephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "123456",
+      "DateJoined": "18 of May 2023",
+      "id": 3
+    },
+    {
+      "username": "maguy",
+      "email": "glock@gmail",
+      "phonenumber": "07042298556",
+      "password": "098765",
+      "DateJoined": "18 of May 2023",
+      "id": 4
     }
   ],
   "farmers": [
@@ -268,7 +284,7 @@
       "farmerEmail": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
       "farmerPassword": "e1f2i3iyanda",
-      "retypePassword": "e1f2i3iyanda",
+      "DateJoined": "10 of May 2023",
       "id": 0
     },
     {
@@ -277,7 +293,7 @@
       "shopname": "nhub",
       "phonenumber": "07042298556",
       "farmerPassword": "20222",
-      "retypePassword": "20222",
+      "DateJoined": "10 of May 2023",
       "id": 1
     }
   ]

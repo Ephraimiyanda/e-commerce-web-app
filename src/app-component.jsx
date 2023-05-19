@@ -12,22 +12,35 @@ import AboutUs from "./about";
 import Profile from "./profile/profile";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { Redirect } from "react-router-dom";
 function App(){
     const [cartItems, setCartItems]=useState([]);
     const[quantity,setquantity]=useState(1)
     const [user,setUser]=useState(null);
-    
+    const[seachItem,setSearchItems]=useState([])    
+
+
+    const search =(product)=>{
+        Array.from(product).forEach(function (product){
+            if(product.name.toLowerCase().indexOf(input.value.toLowerCase()) != -1){ 
+                setSearchItems([...seachItem,{...product}])
+            }
+        })
+    }
 
     const handleProfile=(product)=>{
         setUser(product)
     }
 
+function logout(){
+  
+}
     const addToCart = (product)=>{
         setCartItems([...cartItems ,{...product,quantity}])
     }
     
     const addQuantity =(product)=>{
-        const quantityUp = product.quantity++
+        const quantityUp = product.quantity ++
         setquantity(quantityUp);
         if(product.quantity>10){
             alert("maximum products added to cart")
@@ -35,7 +48,7 @@ function App(){
         }
     }
     const reduceQuantity=(product)=>{
-        const quantityDown = product.quantity--
+        const quantityDown = product.quantity --
         if(product.quantity<0){
             alert("minimum products in cart")
             product.quantity=0
@@ -47,21 +60,24 @@ function App(){
         setCartItems(updatedCart)
     }
 
+   
+
 return(
     <div>
-<CartContext.Provider value={{cartItems, addToCart, removeFromCart,quantity,addQuantity,reduceQuantity,handleProfile,user}} >
+<CartContext.Provider value={{cartItems, addToCart, removeFromCart,quantity,addQuantity,reduceQuantity,handleProfile,user,logout,setUser,search,seachItem,setSearchItems}} >
 <Router>
+    
 <Nav />
         <Switch> 
           
        <Suspense fallback={<Loading/>}>
-       <Route exact path="/Homepage" component={MainContent} />
+       <Route  path="/Homepage" component={MainContent} />
         <Route path="/cart" component={Cart}/>
        <Route path="/product/:id" component={ProductOpen}></Route>
        <Route path="/signUp" component={SignUp}></Route>
        <Route path="/AboutUs" component={AboutUs}></Route>
        <Route path="/Profile" component={Profile}></Route>
-       <Route path="/" component={Login}></Route>
+       <Route exact path="/" component={Login}></Route>
        </Suspense>
        
         </Switch>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
   const {cartItems,removeFromCart,quantity,addQuantity,reduceQuantity}=useContext(CartContext)
   
- const total = cartItems.reduce((accumulator, current) => (accumulator + current.price)* current.quantity, 0);
+ const total = cartItems.reduce((item, current) => (item + current.price) * current.quantity,0);
 
  function remove(product){
   removeFromCart(product)
@@ -17,7 +17,6 @@ function additemQuantity(quantity){
 function reduceitemQuantity(quantity){
   reduceQuantity(quantity)
 }
-console.log(cartItems)
   return (
     <div className="cart">
    
@@ -53,7 +52,10 @@ console.log(cartItems)
         </div>
 </div>
       )}
-      <p>Total:{parseFloat((total).toFixed(2))}</p>
+      <div className='total'>
+        <span>Total:</span>
+      <p >₦{parseFloat((total).toFixed(2))}</p>
+      </div>
     </div>
   );
 };
