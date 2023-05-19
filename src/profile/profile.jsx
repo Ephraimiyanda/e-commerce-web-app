@@ -7,7 +7,7 @@ function Profile(){
     const storedUser = localStorage.getItem("user");
     const loggedInUser =JSON.parse(storedUser);
     const [redirect,setRedirect]=useState(false)
-    const {logout,user,setUser}=useContext(CartContext)
+    const {setUser}=useContext(CartContext)
 
     const Logout=()=>{
     setUser(null);
@@ -41,7 +41,7 @@ function Profile(){
                     <div className="profile-dashboard">
                         <div className="profile">
                             
-                            { loggedInUser.map((users)=>
+                            { loggedInUser && loggedInUser.map((users)=>
                             <div>
                              <h4>{users.username}</h4>
                              <p>{users.DateJoined}</p>

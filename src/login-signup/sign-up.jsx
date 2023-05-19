@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import welcomePic from "../../images/welcome-pic.png"
+import { useContext } from "react";
+import { CartContext } from "../cart-components/cartContext";
 function SignUp(){
     const [username,setusername]=useState("");
     const [phonenumber,setusernumber]=useState("");
@@ -18,6 +20,7 @@ function SignUp(){
     const month =now.toLocaleString("default",{month:"long"});
     const year =now.getFullYear()
     const day=now.getDate();
+    const {handleProfile,setUser}=useContext(CartContext)
 
     function flipSwitch(){
         setswitch(false)
@@ -29,14 +32,18 @@ function SignUp(){
 
 const handleSubmit =(e)=>{
   const user = { username,email,phonenumber,password,DateJoined}
+  const storedUser = [user]
   fetch(`  http://localhost:3000/users`,{
     method:"POST",
     headers:{"content-Type":"application/json"},
     body:JSON.stringify(user)
   }).then(()=>{
     setloggedIn(true)
+    handleProfile(storedUser);
+    localStorage.setItem("user",JSON.stringify(storedUser))
   })
 .catch()
+
   if(loggedIn){
     return <Redirect to="/Homepage" />
 }
