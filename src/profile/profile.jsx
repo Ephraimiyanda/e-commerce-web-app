@@ -42,7 +42,7 @@ function Profile(){
                         <div className="profile">
                             
                             { loggedInUser && loggedInUser.map((users)=>
-                            <div>
+                            <div key={users.username}>
                              <h4>{users.username}</h4>
                              <p>{users.DateJoined}</p>
 
