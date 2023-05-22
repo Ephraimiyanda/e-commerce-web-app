@@ -347,6 +347,14 @@
       "password": "123456",
       "DateJoined": "19 of May 2023",
       "id": 13
+    },
+    {
+      "username": "wertyuiop[",
+      "email": "ephraim@gmail.com",
+      "phonenumber": "07042298556",
+      "password": "123456",
+      "DateJoined": "19 of May 2023",
+      "id": 14
     }
   ],
   "farmers": [

@@ -7,13 +7,14 @@ import tractor1 from "/images/one.png"
 import tractor2 from "/images/two.png"
 import tractor3 from "/images/three.png"
 import tractor4 from "/images/four.png"
-
+import { useContext } from "react";
+import { CartContext } from "./cart-components/cartContext";
+import Search from "./Search";
 function MainContent(){
-
-
+const{searchproduct}=useContext(CartContext)
     return(
 <div className="content-container">
-   
+<Search product={searchproduct}/>
 <div>
             <div className="header--text">
                 <h1>Linkages between <span className="green">farmers</span>  and <span className="green"> consumers </span></h1>

@@ -3,7 +3,7 @@ import rectangle from "/images/people/Rectangle 38.png"
 import about from "/images/Rectangle 46.png"
 function AboutUs(){
     return(
-      <div classNameName="about-container">
+      <div className="about-container">
  <div className="container">
 
 <div className="first-half">
@@ -39,7 +39,7 @@ function AboutUs(){
 
 </div>
 
-<div classNameName="footer">
+<div className="footer">
     
 <div className="team "> <img className="people" src={rectangle} alt=""></img><span>Salamatu ceesay</span><p>Designer</p></div>
     <div className="team "><img className="people" src={rectangle}  alt=""></img><span>Khadijah Abk </span><p>Ui Designer</p></div>

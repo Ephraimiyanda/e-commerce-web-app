@@ -44,7 +44,11 @@ function Profile(){
                             { loggedInUser && loggedInUser.map((users)=>
                             <div key={users.username}>
                              <h4>{users.username}</h4>
-                             <p>{users.DateJoined}</p>
+                             <div>
+                                <p className="joined">Joined on</p>
+                                <p>{users.DateJoined}</p>
+                             </div>
+                            
 
                              <h5>Lagos Nigeria</h5>
                              </div>
