@@ -73,16 +73,29 @@ h1{
   width: 0px;
 }
 .cart{
+  background: white;
   height: 500px;
   overflow-y: auto;
   display: flex;
-  flex-direction: column;
+  gap: 15px;
   align-content: center;
   margin-bottom: -30px;
 } 
-.cart h2{
-  
-  padding-top: 40px;
+.the-cart{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 15px;
+}
+.cart h2,.productOpen-h2{
+  padding-left: 10px;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: cursive;
+  color: #00C341;
+}
+.productOpen-h2{
+  padding-left: 0px;
 }
 .cart p{
   display: flex;
@@ -92,13 +105,18 @@ h1{
   padding: 0px;
 }
 .cart-item{
+  width: 250px;
+  border: 1px solid #00C341;
+  border-radius: 10px;
   padding-top:15px ;
   padding-bottom: 15px;
   margin-top: 10px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
 }
 .cart-btns{
   display: flex;
@@ -251,6 +269,10 @@ a{
 .products h1{
   margin-left: 16px;
   margin-bottom: 40px;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: cursive;
+  color: #00C341;
 }
 
 .product-link{
@@ -936,6 +958,7 @@ aside ul li:hover{
   background: #00C341;
 }
 .total{
+  height: 35px;
   width: 200px;
   background: white;
   margin-top: 20px;
@@ -952,6 +975,8 @@ aside ul li:hover{
   margin: 0px;
 }
 .total p{
+  padding-top: 5px;
+  margin-top: -6px;
   width: 90px;
   border-radius: 5px;
   background: #00C341;
@@ -1086,6 +1111,10 @@ padding: 0px;
 
 
 @media (max-width:555px) {
+.cart{
+  flex-direction: column;
+  height: 700px;
+}
 
   .wallet-block h4{
     text-align: center;

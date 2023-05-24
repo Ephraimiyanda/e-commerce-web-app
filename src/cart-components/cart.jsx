@@ -24,8 +24,8 @@ function reduceitemQuantity(quantity){
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
+<div >
 <div className='the-cart'>
-<div>
 
           {cartItems.map((items,index)=>(
               <div className='cart-item' key={index} >

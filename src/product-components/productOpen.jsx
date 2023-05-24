@@ -14,7 +14,7 @@ function ProductOpen(){
          
         {product && (
             <div >
-                <h2>Product information</h2>
+                <h2 className="productOpen-h2">Product information</h2>
 
             <div className="product-details">
             <div className="productDescription-col1">
