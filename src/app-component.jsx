@@ -20,7 +20,7 @@ function App(){
     const[quantity,setquantity]=useState(1)
     const [user,setUser]=useState(null);  
     const[searchproduct,setsearchProduct]=useState([]);
-
+    const[addToCartMessage,setMessage]=useState("")
 const handlesearch=async(searchQuery)=>{
     try{
         const response =await fetch(`http://localhost:3000/product`);
@@ -57,6 +57,7 @@ function logout(){
 }
     const addToCart = (product)=>{
         setCartItems([...cartItems ,{...product,quantity}])
+       
     }
     
     const addQuantity =(product)=>{
@@ -84,7 +85,7 @@ function logout(){
 
 return(
     <div>
-<CartContext.Provider value={{cartItems, addToCart, removeFromCart,quantity,addQuantity,reduceQuantity,handleProfile,user,logout,setUser,handlesearch,searchproduct}} >
+<CartContext.Provider value={{cartItems, addToCart, removeFromCart,quantity,addQuantity,reduceQuantity,handleProfile,user,logout,setUser,handlesearch,searchproduct,addToCartMessage,setMessage}} >
 <Router>
     
 <Nav handleSearch={handlesearch}/>

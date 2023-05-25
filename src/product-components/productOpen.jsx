@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import useFetch from "./productFetcher";
 import AddToCartBtn from "../addToCartBtn";
+import { useContext } from "react";
+import { CartContext } from "../cart-components/cartContext";
 import Item from "./product";
 function ProductOpen(){
     const {id}= useParams();
     const {product}=useFetch(`http://localhost:3000/product/`+ id);
-   
-
+    const {addToCartMessage}=useContext(CartContext);
 
     return(
         <div>
@@ -15,7 +16,7 @@ function ProductOpen(){
         {product && (
             <div >
                 <h2 className="productOpen-h2">Product information</h2>
-
+                {addToCartMessage}
             <div className="product-details">
             <div className="productDescription-col1">
                 <img className="product-photo" src={product.photo} alt="" />

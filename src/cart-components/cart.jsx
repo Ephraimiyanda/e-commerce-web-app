@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import dustbin from "../../images/trash-bin-svgrepo-com.svg"
 import { CartContext } from '../cart-components/cartContext';
 import { Link } from 'react-router-dom';
+
 const Cart = () => {
   const {cartItems,removeFromCart,quantity,addQuantity,reduceQuantity}=useContext(CartContext)
   
@@ -21,12 +22,13 @@ function reduceitemQuantity(quantity){
     <div className="cart">
    
       <h2>Cart</h2>
+      
+
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
 <div >
 <div className='the-cart'>
-
           {cartItems.map((items,index)=>(
               <div className='cart-item' key={index} >
               <div> <img className='cartItem-img' src={items.photo} alt="" width={"150px"} height={"140px"}/></div>

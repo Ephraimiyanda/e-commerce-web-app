@@ -10,13 +10,15 @@ import tractor4 from "/images/four.png"
 import { useContext } from "react";
 import { CartContext } from "./cart-components/cartContext";
 import Search from "./Search";
+
 function MainContent(){
-const{searchproduct}=useContext(CartContext)
+const{searchproduct,addToCartMessage}=useContext(CartContext)
     return(
 <div className="content-container">
 <Search product={searchproduct}/>
 <div>
             <div className="header--text">
+                {addToCartMessage}
                 <h1>Linkages between <span className="green">farmers</span>  and <span className="green"> consumers </span></h1>
                 <button className="header--btn"><a href="./agric/first.html">Get Started</a></button>
             </div>
@@ -24,7 +26,7 @@ const{searchproduct}=useContext(CartContext)
     <div className="search-content"> </div><div className="products" id="products">
                 <h1 className="fruits" href="fruits">Fruits</h1>
                 <div id="firstrow">
-
+                
          < Item productClass={"product-container"}  productType="fruit"  />
    
               </div>
@@ -36,7 +38,7 @@ const{searchproduct}=useContext(CartContext)
       </div>
             </div>
             <div className="products">
-                <h1>spicies</h1>
+                <h1>Spicies</h1>
                 <div id="firstrow">
          < Item  productClass={"product-container"} productType="spice"  />
     
@@ -51,7 +53,7 @@ const{searchproduct}=useContext(CartContext)
                </div>
             </div>
             <div className="products">
-                <h1>cereals</h1>
+                <h1>Cereals</h1>
                 <div id="firstrow">
          < Item productClass={"product-container"} productType="cereal"  />
      

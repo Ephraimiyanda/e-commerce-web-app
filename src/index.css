@@ -4,6 +4,12 @@
   padding-left: 0px;
   margin: 0px;
 }
+.success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
 .searchname{
   background-color: #fff;
   width: 220px;
@@ -982,7 +988,22 @@ aside ul li:hover{
   background: #00C341;
   margin-left: auto;
 }
+.addToCartMessage{
+  background: #8FE2A2;
+  width: 250px;
+  height: 50px;
+  padding: 0px;
+  padding-left: 10px;
+  padding-top: 15px;
+  border-radius: 4px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  position: fixed;
+}
 
+.addToCartMessage span{
+margin-left: 10px;
+}
 @media (max-width:1000px) {
   
   .social-links{
@@ -1111,6 +1132,9 @@ padding: 0px;
 
 
 @media (max-width:555px) {
+  .addToCartMessage p{
+    padding: 0px;
+  }
 .cart{
   flex-direction: column;
   height: 700px;
