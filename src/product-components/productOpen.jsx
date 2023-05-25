@@ -4,6 +4,7 @@ import AddToCartBtn from "../addToCartBtn";
 import { useContext } from "react";
 import { CartContext } from "../cart-components/cartContext";
 import Item from "./product";
+import Alert from "../alert";
 function ProductOpen(){
     const {id}= useParams();
     const {product}=useFetch(`http://localhost:3000/product/`+ id);
@@ -16,7 +17,7 @@ function ProductOpen(){
         {product && (
             <div >
                 <h2 className="productOpen-h2">Product information</h2>
-                {addToCartMessage}
+                {addToCartMessage ? <Alert type="success"><p className='addToCartMessage'>successfully added to cart<span>✔️</span></p></Alert>:""}
             <div className="product-details">
             <div className="productDescription-col1">
                 <img className="product-photo" src={product.photo} alt="" />

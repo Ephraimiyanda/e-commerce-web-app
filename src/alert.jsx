@@ -8,7 +8,7 @@ export default function Alert({ children, type, message }) {
     return React.cloneElement(children);
   }
     return (
-        <div className={css(style.alert, style[type])}>
+        <div className="alert">
     
       {children ? renderElAlert() : message}
     </div>

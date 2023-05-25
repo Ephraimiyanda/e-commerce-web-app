@@ -12,7 +12,7 @@ return(
     <button className={addToCartBtn} onClick={()=>{
         handleCart(product);
         setTimeout(()=>{
-            setMessage(<Alert type="success"><p className='addToCartMessage'>successfully added to cart<span>✔️</span></p></Alert>)
+            setMessage(true)
         },500)    
     }} >Add to cart</button>
 )

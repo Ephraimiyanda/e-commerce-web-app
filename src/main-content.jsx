@@ -10,7 +10,7 @@ import tractor4 from "/images/four.png"
 import { useContext } from "react";
 import { CartContext } from "./cart-components/cartContext";
 import Search from "./Search";
-
+import Alert from "./alert";
 function MainContent(){
 const{searchproduct,addToCartMessage}=useContext(CartContext)
     return(
@@ -18,7 +18,7 @@ const{searchproduct,addToCartMessage}=useContext(CartContext)
 <Search product={searchproduct}/>
 <div>
             <div className="header--text">
-                {addToCartMessage}
+                {addToCartMessage ?<Alert type="success"><p className='addToCartMessage'>successfully added to cart<span>✔️</span></p></Alert>:""}
                 <h1>Linkages between <span className="green">farmers</span>  and <span className="green"> consumers </span></h1>
                 <button className="header--btn"><a href="./agric/first.html">Get Started</a></button>
             </div>

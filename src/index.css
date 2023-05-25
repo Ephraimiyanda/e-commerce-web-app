@@ -988,6 +988,11 @@ aside ul li:hover{
   background: #00C341;
   margin-left: auto;
 }
+.alert{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
 .addToCartMessage{
   background: #8FE2A2;
   width: 250px;

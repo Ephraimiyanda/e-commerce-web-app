@@ -20,7 +20,7 @@ function App(){
     const[quantity,setquantity]=useState(1)
     const [user,setUser]=useState(null);  
     const[searchproduct,setsearchProduct]=useState([]);
-    const[addToCartMessage,setMessage]=useState("")
+    const[addToCartMessage,setMessage]=useState(false)
 const handlesearch=async(searchQuery)=>{
     try{
         const response =await fetch(`http://localhost:3000/product`);
