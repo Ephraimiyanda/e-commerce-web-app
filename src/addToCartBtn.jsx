@@ -6,14 +6,15 @@ function AddToCartBtn({product,addToCartBtn}){
    
 const handleCart=(product)=>{
 addToCart(product);
-
+setMessage(true)
+setTimeout(()=>{
+    setMessage(false)
+},1500)    
 }
 return(
     <button className={addToCartBtn} onClick={()=>{
         handleCart(product);
-        setTimeout(()=>{
-            setMessage(true)
-        },500)    
+       
     }} >Add to cart</button>
 )
 }
