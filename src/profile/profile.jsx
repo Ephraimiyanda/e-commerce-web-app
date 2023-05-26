@@ -20,7 +20,7 @@ function Profile(){
 }
     return (
     <div> 
-  
+  { loggedInUser && loggedInUser.map((users)=>
     <div><div className="head ">
             <h1>My Account</h1>
         </div><section className="profile-box">
@@ -32,6 +32,8 @@ function Profile(){
                         <li><a href="">payments</a></li>
                         <li><a href="">transaction</a></li>
                         <li><Link to="changePassword">change password</Link></li>
+                        {users.isCustomer?"":<li><Link to="sellProduct">Sell product</Link></li>}
+                        {users.isCustomer?"":<li><Link>Reviews</Link></li>}
                         <li><button className="logout-btn" onClick={Logout}
                             
                             >logout</button></li>
@@ -41,7 +43,7 @@ function Profile(){
                     <div className="profile-dashboard">
                         <div className="profile">
                             
-                            { loggedInUser && loggedInUser.map((users)=>
+                            
                             <div key={users.username}>
                              <h4>{users.username}</h4>
                              <div>
@@ -52,7 +54,7 @@ function Profile(){
 
                              <h5>Lagos Nigeria</h5>
                              </div>
-                           )}
+                          
                                 
                             
                         </div>
@@ -71,7 +73,7 @@ function Profile(){
                 </main>
 
             </section></div>
-   
+    )}
     </div>
     )}    
     export default Profile;

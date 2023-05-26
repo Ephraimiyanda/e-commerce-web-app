@@ -9,7 +9,6 @@
   background-color: #d1e7dd;
   border-color: #badbcc;
 }
-
 .searchname{
   background-color: #fff;
   width: 220px;
@@ -356,10 +355,10 @@ width: 50%;
   width: 70px;
   height: 70px;
   text-align: center;
+  border: 1px solid #00C341;
 }
 
 .white-background{
-  background-color:#EAFFEE;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,6 +366,7 @@ width: 50%;
   padding: 10px 0;
   width: max-content;
   margin-bottom: 20px;
+  border: 1px solid #00C341;
 }
 dl{
   text-align: left;
@@ -1021,6 +1021,27 @@ margin-left: 10px;
  .empty-cart-p{
   height: 20px;
 }
+.radio-div{
+  display: flex;
+}
+.radio-div p{
+  padding: 0px;
+  padding-top: 10px;
+  width: 100px;
+  font-size: medium;
+}
+.radio-div input{
+  width: 20px;
+  margin-right: 10px;
+}
+.newProduct-form{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.unsuccessful-message{
+  background: rgb(247, 134, 134);
+}
 @media (max-width:1000px) {
   
   .social-links{
@@ -1099,7 +1120,6 @@ p{
   margin-top: -25px;
   width: 90%;
   justify-content: space-around;
-  transition: all 0.5s; 
   width: 90%;
   border-width: 0px;
   display: flex;
@@ -1108,10 +1128,8 @@ p{
 }
 .show{
   display: flex;
-  position: absolute;
-  background: linear-gradient(to right, rgb(61, 247, 19),#1edc5d);
   opacity: 1;
-  transform: translateY(80px);
+  margin-top: 7px;
   width: 100%;
   margin-left: -10px;
   padding-top: 14px;
@@ -1123,6 +1141,10 @@ p{
   flex-wrap: wrap;
   position: relative;
   height: 70px;
+  transition: all 0s; 
+ }
+ .increase{
+  padding-bottom: 100px;
  }
  .nav > input{
   width: 50%;
@@ -1149,6 +1171,11 @@ padding: 0px;
 
 
 @media (max-width:555px) {
+  .newProduct-form{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .addToCartMessage p{
     padding: 0px;
   }

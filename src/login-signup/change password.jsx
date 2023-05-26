@@ -20,7 +20,7 @@ export default function ChangePassword() {
 
   const onChangePasswordForCustomer = () => {
     const changedPassword = { password: newPassword };
-    fetch(`http://localhost:3000/users?id=${userId}`, {
+    fetch(`http://localhost:3000/users?id=${userId}&password=${oldPassword}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(changedPassword),
@@ -35,12 +35,10 @@ export default function ChangePassword() {
       });
   };
 
-  const onChangePasswordForFarmer = () => {
-    const changedPassword = { password: newPassword };
-    fetch(`http://localhost:3000/farmers?id=${userId}`, {
+  const onChangePasswordForFarmer = (changedPassword) => {
+    fetch(`http://localhost:3000/farmers?id=${userId}&password=${oldPassword}`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(changedPassword),
+      body: changedPassword,
     })
       .then((response) => {
         if (response.ok) {
@@ -58,13 +56,13 @@ export default function ChangePassword() {
 
   return (
     <div>
-      <form
+      <form className="newProduct-form"
         onSubmit={(event) => {
           event.preventDefault();
           if (originalPass === oldPassword && userType === true) {
             onChangePasswordForCustomer();
           } else {
-            onChangePasswordForFarmer();
+            onChangePasswordForFarmer(newPassword);
           }
         }}
       >

@@ -46,7 +46,7 @@ function ProductOpen(){
                
             </div>
             <div>
-                <h2 className="more-h2">More products like {product.name}</h2>
+                <h2 className="productOpen-h2">More products like {product.name}</h2>
                 <div className="more-products">
                     <Item productType={product.type} productClass={"productInMore"}/>
                 </div>

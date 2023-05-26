@@ -16,6 +16,7 @@ import { Redirect } from "react-router-dom";
 import Search from "./Search";
 import { Link } from "react-router-dom";
 import ChangePassword from "./login-signup/change password";
+import AddProducts from "./login-signup/New-Products";
 function App(){
     const [cartItems, setCartItems]=useState([]);
     const[quantity,setquantity]=useState(1)
@@ -102,6 +103,7 @@ return(
        <Route path="/Profile" component={Profile}></Route>
        <Route path="/search" component={Search}></Route>
        <Route path="/changePassword" component={ChangePassword}></Route>
+       <Route path="/sellProduct" component={AddProducts}></Route>
        <Route exact path="/" component={Login}></Route>
       
        </Suspense>

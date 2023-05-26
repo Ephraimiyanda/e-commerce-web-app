@@ -202,7 +202,7 @@
       "name": "Oats",
       "farmer": "",
       "photo": "https://images.pexels.com/photos/87824/oats-oat-field-arable-cereals-87824.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "type": "Cereal",
+      "type": "cereal",
       "description": "Heart-healthy and filling, perfect for breakfast.",
       "price": 1.5,
       "id": 21
@@ -242,7 +242,17 @@
       "phonenumber": "07042298556",
       "password": "e1f2i3iyanda",
       "DateJoined": "10 of May 2023",
+      "isCustomer": true,
       "id": 0
+    },
+    {
+      "username": "ephraim@zik",
+      "email": "iyandaephraim@gmail.com",
+      "phonenumber": "ephraim@zik",
+      "password": "qwerty",
+      "DateJoined": "26 of May 2023",
+      "isCustomer": true,
+      "id": 1
     }
   ],
   "farmers": [

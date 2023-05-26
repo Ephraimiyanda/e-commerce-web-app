@@ -1,12 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState } from 'react';
 import dustbin from "../../images/trash-bin-svgrepo-com.svg"
 import { CartContext } from '../cart-components/cartContext';
 import { Link } from 'react-router-dom';
+import Alert from '../alert';
 
 const Cart = () => {
+  const[NeedValue,setMessageValue]=useState(false);  
   const {cartItems,removeFromCart,quantity,addQuantity,reduceQuantity}=useContext(CartContext)
   
- const total = cartItems.reduce((item, current) => (item + current.price) * current.quantity,0);
+ const total = cartItems.reduce((item, current) => (item + current.price) * current.quantity,1);
 
  function remove(product){
   removeFromCart(product)
@@ -19,11 +21,11 @@ function reduceitemQuantity(quantity){
   reduceQuantity(quantity)
 }
   return (
+  <div>
+      {NeedValue?<Alert type="success"><p className='addToCartMessage'>Successfully removed<span>✔️</span></p></Alert>:""}
     <div className="cart">
-   
+  
       <h2>Cart</h2>
-      
-
       {cartItems.length === 0 ? (
         <p className='empty-cart-p'>Your cart is empty.</p>
       ) : (
@@ -46,7 +48,13 @@ function reduceitemQuantity(quantity){
               </div>
                <div className='cart-btns'>
                    <button className='payment-btn'>Make Payment</button>
-                   <button className='remove-item-btn' onClick={()=>{remove(items)}} ><img  src={dustbin} alt="" width ="20px"/> Remove</button>
+                   <button className='remove-item-btn' onClick={()=>{
+                    remove(items)
+                    setMessageValue(true)
+                    setTimeout(()=>{
+                    setMessageValue(false)
+                    },1500)
+                  }} ><img  src={dustbin} alt="" width ="20px"/> Remove</button>
                </div>
            </div>
           ))}
@@ -59,6 +67,7 @@ function reduceitemQuantity(quantity){
       <p >₦{parseFloat((total).toFixed(2))}</p>
       </div>
     </div>
+  </div>
   );
 };
 
