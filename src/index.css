@@ -975,7 +975,7 @@ aside ul li:hover{
   padding-right: 10px;
 }
 .total span{
-  font-size: larger;
+  font-size: x-large;
   padding: 0px;
   margin: 0px;
 }
@@ -987,9 +987,11 @@ aside ul li:hover{
   display: block;
   padding-top: 8px;
   padding-bottom: 30px;
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: -6px;
   width: 100px;
+  text-align: center;
   height: 20px;
   border-radius: 25px;
   background: #00C341;
