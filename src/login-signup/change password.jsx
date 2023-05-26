@@ -55,7 +55,7 @@ export default function ChangePassword() {
             event.preventDefault();
             if (originalPass === oldPassword && userType === true) {
               OnChangePasswordForCustomer()
-            }else if(userType===false){
+            }else{
                 OnChangePasswordForFarmer()
             }
           }}

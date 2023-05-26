@@ -86,6 +86,7 @@ h1{
   gap: 15px;
   align-content: center;
   margin-bottom: -30px;
+  padding-bottom: 20px;
 } 
 .the-cart{
 display: flex;
@@ -984,9 +985,9 @@ aside ul li:hover{
 .total p{
   padding: 0px;
   display: block;
-  padding-top: 5px;
+  padding-top: 8px;
   padding-bottom: 30px;
-  padding-left: 15px;
+  padding-left: 5px;
   margin-top: -6px;
   width: 100px;
   height: 20px;

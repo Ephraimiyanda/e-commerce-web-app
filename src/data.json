@@ -249,9 +249,9 @@
     {
       "username": "Ephraim Iyanda",
       "shopname": "zik and sons",
-      "farmerEmail": "iyandaephraim@gmail.com",
+      "email": "iyandaephraim@gmail.com",
       "phonenumber": "07042298556",
-      "farmerPassword": "e1f2i3iyanda",
+      "password": "e1f2i3iyanda",
       "DateJoined": "10 of May 2023",
       "id": 0
     },

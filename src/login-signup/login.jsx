@@ -3,7 +3,6 @@ import { Link, Redirect } from "react-router-dom";
 import welcomePic from "../../images/welcome-pic.png";
 import { useContext } from "react";
 import { CartContext } from "../cart-components/cartContext";
-import { useHistory } from "react-router-dom";
 
 function Login() {
   const [switchSignups, setSwitchSignups] = useState(false);
@@ -43,7 +42,7 @@ const {handleProfile}=useContext(CartContext)
   async function onLoginForFarmers(e) {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:3000/farmers?farmerEmail=${email}&farmerPassword=${password}`,
+      `http://localhost:3000/farmers?email=${email}&password=${password}`,
       { method: "GET" }
     );
     const farmers = await response.json();
@@ -115,9 +114,9 @@ const {handleProfile}=useContext(CartContext)
 <div className={switchSignups ? "login-container" : "no-display"}>
               <form onSubmit={onLoginForFarmers}>
                 <label htmlFor="email">Farmer email</label>
-                <input type="text" name="email" value={email} onChange={(e) => setFarmerEmail(e.target.value)} />
+                <input type="text" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <label htmlFor="farmer-password">Password</label>
-                <input type="password" name="farmer-password" value={password} onChange={(e) => setFarmerPassword(e.target.value)} />
+                <input type="password" name="farmer-password" value={password} onChange={(e) => setPassword(e.target.value)} />
                 {farmerLoginMessage}
                 <button className="signup-btn">Sign In</button>
               </form>
