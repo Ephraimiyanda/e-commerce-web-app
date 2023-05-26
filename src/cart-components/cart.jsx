@@ -25,7 +25,7 @@ function reduceitemQuantity(quantity){
       
 
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className='empty-cart-p'>Your cart is empty.</p>
       ) : (
 <div >
 <div className='the-cart'>

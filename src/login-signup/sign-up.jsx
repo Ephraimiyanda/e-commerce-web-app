@@ -9,18 +9,17 @@ function SignUp(){
     const [phonenumber,setusernumber]=useState("");
     const [password,setpassword]=useState("");
     const [email,setemail]=useState("");
-    const[farmerPassword,setFarmerPassword]=useState("");
-    const[farmerEmail,setFarmerEmail]=useState("");
-    const[retypePassword,setretype]=useState("");
+    const [retypePassword,setretype]=useState("");
     const [ispending,handlepending]=useState(false)
     const [shopname,setshopname]=useState("");
     const [switchsignups,setswitch]=useState(false);
-    const[loggedIn,setloggedIn]=useState(false);
+    const [loggedIn,setloggedIn]=useState(false);
+    const [isCustomer,setIsCustomer]=useState()
     const now = new Date();
     const month =now.toLocaleString("default",{month:"long"});
     const year =now.getFullYear()
     const day=now.getDate();
-    const {handleProfile,setUser}=useContext(CartContext)
+    const {handleProfile}=useContext(CartContext)
 
     function flipSwitch(){
         setswitch(false)
@@ -31,7 +30,7 @@ function SignUp(){
   const  DateJoined = `${day} of ${month} ${year}`;
 
 const handleSubmit =(e)=>{
-  const user = { username,email,phonenumber,password,DateJoined}
+  const user = { username,email,phonenumber,password,DateJoined,isCustomer}
   const storedUser = [user]
   fetch(`  http://localhost:3000/users`,{
     method:"POST",
@@ -51,13 +50,16 @@ const handleSubmit =(e)=>{
 
 
 const handleSubmitForFarmers=(e)=>{
-    const farmer = { username,farmerEmail,shopname,phonenumber,farmerPassword,DateJoined}
+    const farmer = { username,email,shopname,phonenumber,password,DateJoined,isCustomer}
+    const storedfarmer=[farmer]
     fetch(`http://localhost:3000/farmers`,{
       method:"POST",
       headers:{"content-Type":"application/json"},
       body:JSON.stringify(farmer)
     }).then(()=>{
       setloggedIn(true)
+      handleProfile(storedfarmer);
+      localStorage.setItem("user",JSON.stringify(storedfarmer))
     })
 .catch()
 }
@@ -90,8 +92,11 @@ if(loggedIn){
             <form onSubmit={(e)=>{
                
                 e.preventDefault()
-                if(password === retypePassword){
-                    handleSubmit();
+                setIsCustomer(true)
+                if(password === retypePassword && isCustomer){
+                  
+                  handleSubmit();
+                    
                 }else {
                     alert("no match")
                 }
@@ -116,9 +121,12 @@ if(loggedIn){
         <div className={switchsignups ?"login-container" :"no-display"}>
 
             <form onSubmit={(e)=>{
+              setIsCustomer(false)
              e.preventDefault()
-                if(farmerPassword===retypePassword){
-                    handleSubmitForFarmers();
+                if(password===retypePassword && !isCustomer){
+                  
+                  handleSubmitForFarmers();
+                    
                 }else{
                     alert("password does not match")
                 }
@@ -129,11 +137,11 @@ if(loggedIn){
                 <label htmlFor="username">username</label>
                 <input type="text" name="username" value={username} placeholder="username" onChange={(e)=>setusername(e.target.value)} minLength={5}/>
                 <label htmlFor="email">Email</label>
-                <input value={farmerEmail} type="email" name="email" placeholder="name@gmail.com"  onChange={(e)=>setFarmerEmail(e.target.value)}></input>
+                <input value={email} type="email" name="email" placeholder="name@gmail.com"  onChange={(e)=>setemail(e.target.value)}></input>
                 <label htmlFor="phone-number">phone number</label>
                 <input type="text" name="phone-number" value={phonenumber} placeholder="0000-000-0000"  onChange={(e)=>setusernumber(e.target.value)} minLength={11}/>
                 <label htmlFor="password">Password</label>
-                <input value={farmerPassword} type="password" name="password" placeholder="**********"  onChange={(e)=>setFarmerPassword(e.target.value)} minLength={5}></input>
+                <input value={password} type="password" name="password" placeholder="**********"  onChange={(e)=>setpassword(e.target.value)} minLength={5}></input>
                 <label htmlFor="re-type password">confirm password</label>
                 <input  type="password" name="re-type password" placeholder="**********" value={retypePassword}  onChange={(e)=>setretype(e.target.value)}/>
                { !ispending && <button className="signup-btn">Sign up</button> } 

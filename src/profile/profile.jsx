@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../cart-components/cartContext"
-import { Redirect } from "react-router-dom"
+import { Link, Redirect } from "react-router-dom"
 
 function Profile(){
     
@@ -31,7 +31,7 @@ function Profile(){
                         <li><a href="">saved products</a></li>
                         <li><a href="">payments</a></li>
                         <li><a href="">transaction</a></li>
-                        <li><a href="">change password</a></li>
+                        <li><Link to="changePassword">change password</Link></li>
                         <li><button className="logout-btn" onClick={Logout}
                             
                             >logout</button></li>

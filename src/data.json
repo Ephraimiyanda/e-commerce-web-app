@@ -243,118 +243,6 @@
       "password": "e1f2i3iyanda",
       "DateJoined": "10 of May 2023",
       "id": 0
-    },
-    {
-      "username": "bjkl",
-      "email": "iyandaephraim@gmail.co",
-      "phonenumber": "07042298556",
-      "password": "20222",
-      "DateJoined": "10 of May 2023",
-      "id": 1
-    },
-    {
-      "username": "ephraim@zik",
-      "email": "iyandaephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "20222",
-      "DateJoined": "10 May of 2023",
-      "id": 2
-    },
-    {
-      "username": "ephraim@zik",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "123456",
-      "DateJoined": "18 of May 2023",
-      "id": 3
-    },
-    {
-      "username": "maguy",
-      "email": "glock@gmail",
-      "phonenumber": "07042298556",
-      "password": "098765",
-      "DateJoined": "18 of May 2023",
-      "id": 4
-    },
-    {
-      "username": "liyfyflify",
-      "email": "iyandaephraim@gmail.co",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 5
-    },
-    {
-      "username": ".khvkiviyv",
-      "email": "iyandaephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 6
-    },
-    {
-      "username": "kjblkjvl",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 7
-    },
-    {
-      "username": "ljblbljkb",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "bjkl",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 8
-    },
-    {
-      "username": "ljkblb",
-      "email": "iyandaephraim@gmail.co",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 9
-    },
-    {
-      "username": "dfghjk;",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 10
-    },
-    {
-      "username": "qwerty",
-      "email": "iyandaephraim@gmail.co",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 11
-    },
-    {
-      "username": "asdfghjk",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "1234567",
-      "DateJoined": "19 of May 2023",
-      "id": 12
-    },
-    {
-      "username": "bjkllj",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "123456",
-      "DateJoined": "19 of May 2023",
-      "id": 13
-    },
-    {
-      "username": "wertyuiop[",
-      "email": "ephraim@gmail.com",
-      "phonenumber": "07042298556",
-      "password": "123456",
-      "DateJoined": "19 of May 2023",
-      "id": 14
     }
   ],
   "farmers": [
@@ -368,12 +256,12 @@
       "id": 0
     },
     {
-      "username": "ephraim@zik",
-      "farmerEmail": "iyandaephraim@gmail.com",
+      "username": "iyandaephraim@gmail.com",
+      "email": "iyanda@gmail",
       "shopname": "nhub",
-      "phonenumber": "07042298556",
-      "farmerPassword": "20222",
-      "DateJoined": "10 of May 2023",
+      "phonenumber": "iyandaephraim@gmail.com",
+      "password": "qwerty7",
+      "DateJoined": "25 of May 2023",
       "id": 1
     }
   ]

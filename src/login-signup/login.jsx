@@ -43,7 +43,7 @@ const {handleProfile}=useContext(CartContext)
   async function onLoginForFarmers(e) {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:3000/farmers?farmerEmail=${farmerEmail}&farmerPassword=${farmerPassword}`,
+      `http://localhost:3000/farmers?farmerEmail=${email}&farmerPassword=${password}`,
       { method: "GET" }
     );
     const farmers = await response.json();
@@ -51,9 +51,10 @@ const {handleProfile}=useContext(CartContext)
 
     if (farmers.length > 0) {
       setFarmerLoginMessage(
-        <p className="login-message">Welcome back</p>
-      );
+        <p className="login-message">Welcome back</p>);
       setLoggedIn(true);
+      handleProfile(farmers);
+      localStorage.setItem("user",JSON.stringify(farmers))
     } else {
       setFarmerLoginMessage(
         <p className="login-message wrong">
@@ -114,9 +115,9 @@ const {handleProfile}=useContext(CartContext)
 <div className={switchSignups ? "login-container" : "no-display"}>
               <form onSubmit={onLoginForFarmers}>
                 <label htmlFor="email">Farmer email</label>
-                <input type="text" name="email" value={farmerEmail} onChange={(e) => setFarmerEmail(e.target.value)} />
+                <input type="text" name="email" value={email} onChange={(e) => setFarmerEmail(e.target.value)} />
                 <label htmlFor="farmer-password">Password</label>
-                <input type="password" name="farmer-password" value={farmerPassword} onChange={(e) => setFarmerPassword(e.target.value)} />
+                <input type="password" name="farmer-password" value={password} onChange={(e) => setFarmerPassword(e.target.value)} />
                 {farmerLoginMessage}
                 <button className="signup-btn">Sign In</button>
               </form>

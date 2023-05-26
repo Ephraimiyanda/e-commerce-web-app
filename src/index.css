@@ -105,10 +105,8 @@ gap: 15px;
 }
 .cart p{
   display: flex;
-  align-content: center;
   justify-content: center;
-  margin: 0px;
-  padding: 0px;
+ 
 }
 .cart-item{
   width: 250px;
@@ -980,11 +978,19 @@ aside ul li:hover{
   padding: 0px;
   margin: 0px;
 }
+.increament_decreament-container p{
+  padding: 0px;
+}
 .total p{
+  padding: 0px;
+  display: block;
   padding-top: 5px;
+  padding-bottom: 30px;
+  padding-left: 15px;
   margin-top: -6px;
-  width: 90px;
-  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  border-radius: 25px;
   background: #00C341;
   margin-left: auto;
 }
@@ -1008,6 +1014,9 @@ aside ul li:hover{
 
 .addToCartMessage span{
 margin-left: 10px;
+}
+ .empty-cart-p{
+  height: 20px;
 }
 @media (max-width:1000px) {
   
