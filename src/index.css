@@ -4,18 +4,34 @@
   padding-left: 0px;
   margin: 0px;
 }
+.searched-div{
+  display: flex;
+  gap: 60px;
+  width: 50%;
+  background: white;
+  margin-top: 7px;
+}
+.searched-div img{
+  width: 50px;
+  height: 50px;
+}
+.searchname{
+ margin-top: auto;
+ margin-bottom: auto;
+}
+.searched-div p{
+  width: 70px;
+  margin-left: auto;
+  padding: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .success {
   color: #0f5132;
   background-color: #d1e7dd;
   border-color: #badbcc;
 }
-.searchname{
-  background-color: #fff;
-  width: 220px;
-  padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
+
 .search{
   margin-top: 100px;
 }

@@ -40,8 +40,12 @@ const handlesearch=async(searchQuery)=>{
             const search =   matchArray.map((product) => {
             const regex = new RegExp(`(${searchQuery})`, 'gi');
             const Name = product.name.replace(regex, `<span className="highlightedname">${searchQuery}</span>`);
-            const Nameprice=Name+(-product.price)
-            return (<Link to={`/product/${product.id}`}><li key={product.id} className="searchname" dangerouslySetInnerHTML={{ __html: Nameprice}}></li></Link>)
+        
+            return (<Link to={`/product/${product.id}`}><div key={product.id} className="searched-div">
+                <img src={product.photo} alt="" />
+                <li  className="searchname" dangerouslySetInnerHTML={{ __html: Name}}></li>
+                <p>₦{product.price}</p>
+                </div></Link>)
             
  })
 setsearchProduct(search)

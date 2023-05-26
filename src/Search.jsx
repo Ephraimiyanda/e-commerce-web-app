@@ -9,7 +9,7 @@ export default function Search(){
     {
      
             <div>
-              {searchproduct.length>0?  <h1>what are you searching for ?...</h1>:""}
+              {searchproduct.length>0?  <h1 className="productOpen-h2">what are you searching for ?...</h1>:""}
                <ul className="search-ul">
                    {searchproduct.map((result)=>result)}
                 
